@@ -1,8 +1,5 @@
 #vehicle_reporting.py
 
-#untuk bikin .exe
-#pyinstaller --onefile vehicle_reporting.py
-
 import os
 import time
 import smtplib

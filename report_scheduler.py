@@ -1,4 +1,7 @@
-#report_scheduler.py
+#C:\Users\alvus\Desktop\m2-periodic-report\report_scheduler.py
+#untuk bikin .exe
+#pyinstaller --onefile report_scheduler.py
+
 import schedule
 import time
 import subprocess
@@ -33,13 +36,17 @@ def run_report():
     except Exception as e:
         logging.error(f"Failed to run report: {e}")
 
-# Schedule jobs
+# Schedule jobs every 2 hours starting from 12:00
+schedule.every().day.at("12:00").do(run_report)
 schedule.every().day.at("14:00").do(run_report)
-schedule.every().day.at("19:00").do(run_report)
+schedule.every().day.at("16:00").do(run_report)
+schedule.every().day.at("18:00").do(run_report)
+schedule.every().day.at("20:00").do(run_report)
+schedule.every().day.at("22:00").do(run_report)
 
-logging.info("Scheduler started. Waiting for scheduled times...")
-print("Scheduler started. Waiting for scheduled times...")
-print("Scheduled times: 14:00 and 19:00")
+logging.info("Scheduler started. Reports will run every 2 hours starting from 12:00")
+print("Scheduler started. Reports will run every 2 hours starting from 12:00")
+print("Scheduled times: 12:00, 14:00, 16:00, 18:00, 20:00, 22:00")
 
 # Keep the scheduler running
 while True:
