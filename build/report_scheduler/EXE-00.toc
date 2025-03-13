@@ -94,7 +94,7 @@
  [],
  False,
  False,
- 1741850411,
+ 1741867553,
  [('run.exe',
    'C:\\Users\\alvus\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],

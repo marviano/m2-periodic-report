@@ -18,13 +18,27 @@ def run_report():
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     logging.info(f"Running vehicle report at {current_time}")
     try:
-        # Use the following line if running the Python file directly
-        result = subprocess.run(["python", "vehicle_reporting.py"], 
-                               capture_output=True, text=True)
+        # Get the directory where the script is running from
+        import os
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        vehicle_script_path = os.path.join(script_dir, "vehicle_reporting.py")
         
-        # Or use this if using the compiled exe
-        # result = subprocess.run(["vehicle_reporting.exe"], 
-        #                       capture_output=True, text=True)
+        # Check if the Python script exists
+        if os.path.exists(vehicle_script_path):
+            logging.info(f"Running Python script at: {vehicle_script_path}")
+            result = subprocess.run(["python", vehicle_script_path], 
+                                  capture_output=True, text=True)
+        # If Python script doesn't exist, try the executable in the same directory
+        else:
+            vehicle_exe_path = os.path.join(script_dir, "vehicle_reporting.exe")
+            if os.path.exists(vehicle_exe_path):
+                logging.info(f"Running executable at: {vehicle_exe_path}")
+                result = subprocess.run([vehicle_exe_path], 
+                                      capture_output=True, text=True)
+            else:
+                # If neither exists, log an error
+                logging.error(f"Could not find vehicle_reporting.py or vehicle_reporting.exe in {script_dir}")
+                return
         
         logging.info(f"Report completed with return code: {result.returncode}")
         if result.stdout:
@@ -35,7 +49,7 @@ def run_report():
         logging.error(f"Failed to run report: {e}")
 
 # Schedule times (hour) at which reports should run
-SCHEDULE_HOURS = [12, 14, 15, 16, 18, 20, 22]
+SCHEDULE_HOURS = [12, 14, 16, 18, 20, 22]
 GRACE_MINUTES = 15
 
 # Keep track of which report periods have already run today
