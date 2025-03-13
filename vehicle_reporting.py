@@ -248,13 +248,7 @@ def create_html_report(daily_data, weekly_data, monthly_data,
         </style>
     </head>
     <body>
-        <div class="container">
-            <h1>Ringkasan Penjualan Motor - {location_name}</h1>
-            
-            <div class="generation-time">
-                Dibuat pada: {format_date(today)} {current_time} WIB
-            </div>
-            
+        <div class="container">            
             <div class="period-box daily">
                 <div class="period-title">Penjualan Hari Ini</div>
                 <div class="date-range">Tanggal: {format_date(today)}</div>
