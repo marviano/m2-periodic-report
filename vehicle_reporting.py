@@ -8,6 +8,7 @@ import time
 import smtplib
 import argparse
 import traceback
+import sys
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timezone, timedelta, date
@@ -63,7 +64,7 @@ def calculate_yoy_changes(current_data, last_year_data):
     }
 
 def create_html_report(daily_data, weekly_data, monthly_data, 
-                      daily_yoy, weekly_yoy, monthly_yoy, report_date=None):
+                      daily_yoy, weekly_yoy, monthly_yoy, location_name, report_date=None):
     """Create HTML formatted report showing all periods with date ranges and YoY comparison.
     
     Args:
@@ -73,6 +74,7 @@ def create_html_report(daily_data, weekly_data, monthly_data,
         daily_yoy: Year-over-year comparison for the day
         weekly_yoy: Year-over-year comparison for the week
         monthly_yoy: Year-over-year comparison for the month
+        location_name: Name of the location (e.g., "M2 Madiun" or "M2 Magetan")
         report_date: Specific date for the report (default: current date)
     """
     # Use the specified report date or today's date
@@ -250,7 +252,7 @@ def create_html_report(daily_data, weekly_data, monthly_data,
     </head>
     <body>
         <div class="container">
-            <h1>Ringkasan Penjualan Motor</h1>
+            <h1>Ringkasan Penjualan Motor - {location_name}</h1>
             
             <div class="generation-time">
                 Dibuat pada: {format_date(today)} {current_time} WIB
@@ -450,58 +452,67 @@ def send_email(subject, body, recipients):
         print(f"Error mengirim email: {e}")
         return False
 
-def main(specific_date=None):
+def process_location_data(db_name, location_name, specific_date=None):
     """
-    Generate and send sales report for a specific date or today if no date is provided.
+    Process data for a specific location (database) and generate a report.
     
     Args:
+        db_name (str): Database name to use
+        location_name (str): Name of the location for the report title
         specific_date (date, optional): Specific date for the report. Defaults to None (current date).
     """
-    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
+    recipients = ["alvusebastian@gmail.com"]
+    # recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
     
     try:
         # Use the provided date or today's date
         today = specific_date if specific_date else datetime.now().date()
-        print(f"Mengambil data untuk tanggal {format_date(today)}")
+        print(f"Mengambil data untuk {location_name} tanggal {format_date(today)}")
         
         # Get today's data and last year comparison
         daily_data = get_vehicle_data(
             start_date=today.strftime('%Y-%m-%d'),
-            end_date=today.strftime('%Y-%m-%d')
+            end_date=today.strftime('%Y-%m-%d'),
+            database_name=db_name
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
 
         last_year = today.replace(year=today.year - 1)
         daily_last_year = get_vehicle_data(
             start_date=last_year.strftime('%Y-%m-%d'),
-            end_date=last_year.strftime('%Y-%m-%d')
+            end_date=last_year.strftime('%Y-%m-%d'),
+            database_name=db_name
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
-        print("Data harian berhasil diambil")
+        print(f"Data harian {location_name} berhasil diambil")
         
         # Get this week's data and last year comparison
         week_start = today - timedelta(days=today.weekday())
         weekly_data = get_vehicle_data(
             start_date=week_start.strftime('%Y-%m-%d'),
-            end_date=today.strftime('%Y-%m-%d')
+            end_date=today.strftime('%Y-%m-%d'),
+            database_name=db_name
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
         last_year_week_start = week_start.replace(year=week_start.year - 1)
         weekly_last_year = get_vehicle_data(
             start_date=last_year_week_start.strftime('%Y-%m-%d'),
-            end_date=last_year.strftime('%Y-%m-%d')
+            end_date=last_year.strftime('%Y-%m-%d'),
+            database_name=db_name
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
-        print(f"Data mingguan berhasil diambil")
+        print(f"Data mingguan {location_name} berhasil diambil")
         
         # Get this month's data and last year comparison
         month_start = today.replace(day=1)
         monthly_data = get_vehicle_data(
             start_date=month_start.strftime('%Y-%m-%d'),
-            end_date=today.strftime('%Y-%m-%d')
+            end_date=today.strftime('%Y-%m-%d'),
+            database_name=db_name
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
         last_year_month_start = month_start.replace(year=month_start.year - 1)
         monthly_last_year = get_vehicle_data(
             start_date=last_year_month_start.strftime('%Y-%m-%d'),
-            end_date=last_year.strftime('%Y-%m-%d')
+            end_date=last_year.strftime('%Y-%m-%d'),
+            database_name=db_name
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
-        print(f"Data bulanan berhasil diambil")
+        print(f"Data bulanan {location_name} berhasil diambil")
         
         if all([daily_data, daily_last_year, weekly_data, weekly_last_year, 
                 monthly_data, monthly_last_year]):
@@ -518,20 +529,37 @@ def main(specific_date=None):
                 daily_yoy,
                 weekly_yoy,
                 monthly_yoy,
+                location_name,
                 report_date=today
             )
             send_email(
-                f"Ringkasan Penjualan Motor - {format_date(today)}", 
+                f"{location_name} today, DO: {daily_data['summary']['total_units']}", 
                 html_report, 
                 recipients
             )
-            print(f"Laporan untuk tanggal {format_date(today)} berhasil dikirim")
+            print(f"Laporan {location_name} untuk tanggal {format_date(today)} berhasil dikirim")
+            return True
         else:
-            print("Tidak ada data untuk ditampilkan")
+            print(f"Tidak ada data untuk {location_name} untuk ditampilkan")
+            return False
     
     except Exception as e:
-        print(f"Terjadi kesalahan: {e}")
+        print(f"Terjadi kesalahan pada {location_name}: {e}")
         print(traceback.format_exc())
+        return False
+
+def main(specific_date=None):
+    """
+    Generate and send sales reports for both databases for a specific date or today if no date is provided.
+    
+    Args:
+        specific_date (date, optional): Specific date for the report. Defaults to None (current date).
+    """
+    # Process data for M2 Madiun
+    process_location_data("honda_mis", "M2 Madiun", specific_date)
+    
+    # Process data for M2 Magetan
+    process_location_data("m2_magetan", "M2 Magetan", specific_date)
 
 if __name__ == "__main__":
     # Use argparse for command line arguments
@@ -555,5 +583,5 @@ if __name__ == "__main__":
         print("Selesai!")
     except Exception as e:
         print(f"Error: {e}")
-        print(f"Contoh penggunaan: python {sys.argv[0]} 24022025")
+        print(f"Contoh penggunaan: python {os.path.basename(sys.argv[0])} 24022025")
         sys.exit(1)

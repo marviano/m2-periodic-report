@@ -4,79 +4,148 @@ import mysql.connector
 from datetime import datetime, timezone, timedelta
 from typing import Dict, Any
 
-def connect_to_database():
-    """Establish connection to the MySQL database."""
+def connect_to_database(database_name="honda_mis"):
+    """Establish connection to the MySQL database.
+    
+    Args:
+        database_name (str): Name of the database to connect to. Default is "honda_mis".
+    """
     return mysql.connector.connect(
         host="36.74.102.231",
         user="honda_mis",
         password="mcMotor",
-        database="honda_mis"
+        database=database_name
     )
 
-def get_vehicle_data(start_date: str, end_date: str) -> Dict[str, Any]:
+def get_vehicle_data(start_date: str, end_date: str, database_name="honda_mis") -> Dict[str, Any]:
     """
     Retrieve vehicle data from database for the specified date range.
+    
+    Args:
+        start_date (str): Start date in YYYY-MM-DD format
+        end_date (str): End date in YYYY-MM-DD format
+        database_name (str): Name of the database to connect to. Default is "honda_mis".
     """
-    conn = connect_to_database()
+    conn = connect_to_database(database_name)
     cursor = conn.cursor(dictionary=True)
-
-    # Main query with margin calculation
-    vehicle_query = """
-    SELECT 
-        bast.kode_bast, 
-        bast.tgl_bast,
-        spk.no_form_spk,
-        spk.cara_bayar,
-        mp.nama_pelanggan,
-        spk.kode_finance,
-        mf.nama_finance,
-        spk.tenor,
-        mb.kode_warna_lengkap,
-        mb.nama_lengkap,
-        bast.no_rangka,
-        bast.no_mesin,
-        mk_sales.nama_karyawan AS nama_sales,
-        mk_spv.nama_karyawan AS nama_spv,
-        spk.harga_jual,
-        IFNULL(dor.harga_ppn, 0) AS harga_tebus,
-        (
-            spk.harga_jual - (
-                IFNULL(dor.harga_ppn, 0) + 
-                spk.diskon + 
-                spk.nota_kredit + 
-                spk.komisi_makelar +
-                IFNULL(pl.dp_gross, 0) - 
-                IFNULL(pl.subs_ahm, 0) - 
-                IFNULL(pl.main_dealer, 0) - 
-                IFNULL(mb.perk_notice, 0) +
-                (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
-                spk.promo_pusat
-            ) - spk.perk_adm_wil + spk.saving
-        ) AS margin_unit
-    FROM tbl_spk AS spk 
-    INNER JOIN tbl_bast AS bast 
-        ON bast.kode_spk = spk.kode_spk 
-    LEFT JOIN tbl_data_induk_finance AS mf 
-        ON spk.kode_finance = mf.kode_finance 
-    INNER JOIN vi_data_induk_barang_motor AS mb 
-        ON spk.kendaraan_warna_id = mb.data_id 
-    INNER JOIN tbl_data_induk_pelanggan AS mp 
-        ON spk.kode_pelanggan_faktur = mp.pelanggan_id 
-    INNER JOIN tbl_data_induk_karyawan AS mk_sales 
-        ON spk.sales = mk_sales.nik 
-    INNER JOIN tbl_data_induk_karyawan AS mk_spv 
-        ON spk.supervisor = mk_spv.nik 
-    LEFT JOIN tbl_sub_barang_masuk AS sbm 
-        ON bast.no_rangka = sbm.no_rangka
-    LEFT JOIN tbl_barang_masuk AS bm 
-        ON sbm.kode_bm = bm.kode_bm
-    LEFT JOIN vi_do_lengkap AS dor 
-        ON bm.no_do = dor.no_do 
-        AND mb.kode_warna_lengkap = dor.kode_barang_lengkap
-    LEFT JOIN tbl_penagihan_leasing pl 
-        ON pl.kode_bast = bast.kode_bast
-    WHERE DATE_FORMAT(bast.tgl_bast, '%Y-%m-%d') BETWEEN %s AND %s
-    """
+    
+    # Choose the appropriate query based on the database
+    if database_name == "honda_mis":
+        # Original query for honda_mis
+        vehicle_query = """
+        SELECT 
+            bast.kode_bast, 
+            bast.tgl_bast,
+            spk.no_form_spk,
+            spk.cara_bayar,
+            mp.nama_pelanggan,
+            spk.kode_finance,
+            mf.nama_finance,
+            spk.tenor,
+            mb.kode_warna_lengkap,
+            mb.nama_lengkap,
+            bast.no_rangka,
+            bast.no_mesin,
+            mk_sales.nama_karyawan AS nama_sales,
+            mk_spv.nama_karyawan AS nama_spv,
+            spk.harga_jual,
+            IFNULL(dor.harga_ppn, 0) AS harga_tebus,
+            (
+                spk.harga_jual - (
+                    IFNULL(dor.harga_ppn, 0) + 
+                    spk.diskon + 
+                    spk.nota_kredit + 
+                    spk.komisi_makelar +
+                    IFNULL(pl.dp_gross, 0) - 
+                    IFNULL(pl.subs_ahm, 0) - 
+                    IFNULL(pl.main_dealer, 0) - 
+                    IFNULL(mb.perk_notice, 0) +
+                    (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
+                    spk.promo_pusat
+                ) - spk.perk_adm_wil + spk.saving
+            ) AS margin_unit
+        FROM tbl_spk AS spk 
+        INNER JOIN tbl_bast AS bast 
+            ON bast.kode_spk = spk.kode_spk 
+        LEFT JOIN tbl_data_induk_finance AS mf 
+            ON spk.kode_finance = mf.kode_finance 
+        INNER JOIN vi_data_induk_barang_motor AS mb 
+            ON spk.kendaraan_warna_id = mb.data_id 
+        INNER JOIN tbl_data_induk_pelanggan AS mp 
+            ON spk.kode_pelanggan_faktur = mp.pelanggan_id 
+        INNER JOIN tbl_data_induk_karyawan AS mk_sales 
+            ON spk.sales = mk_sales.nik 
+        INNER JOIN tbl_data_induk_karyawan AS mk_spv 
+            ON spk.supervisor = mk_spv.nik 
+        LEFT JOIN tbl_sub_barang_masuk AS sbm 
+            ON bast.no_rangka = sbm.no_rangka
+        LEFT JOIN tbl_barang_masuk AS bm 
+            ON sbm.kode_bm = bm.kode_bm
+        LEFT JOIN vi_do_lengkap AS dor 
+            ON bm.no_do = dor.no_do 
+            AND mb.kode_warna_lengkap = dor.kode_barang_lengkap
+        LEFT JOIN tbl_penagihan_leasing pl 
+            ON pl.kode_bast = bast.kode_bast
+        WHERE DATE_FORMAT(bast.tgl_bast, '%Y-%m-%d') BETWEEN %s AND %s
+        """
+    else:
+        # Modified query for m2_magetan and any other database without subs_ahm and main_dealer
+        vehicle_query = """
+        SELECT 
+            bast.kode_bast, 
+            bast.tgl_bast,
+            spk.no_form_spk,
+            spk.cara_bayar,
+            mp.nama_pelanggan,
+            spk.kode_finance,
+            mf.nama_finance,
+            spk.tenor,
+            mb.kode_warna_lengkap,
+            mb.nama_lengkap,
+            bast.no_rangka,
+            bast.no_mesin,
+            mk_sales.nama_karyawan AS nama_sales,
+            mk_spv.nama_karyawan AS nama_spv,
+            spk.harga_jual,
+            IFNULL(dor.harga_ppn, 0) AS harga_tebus,
+            (
+                spk.harga_jual - (
+                    IFNULL(dor.harga_ppn, 0) + 
+                    spk.diskon + 
+                    spk.nota_kredit + 
+                    spk.komisi_makelar +
+                    IFNULL(pl.dp_gross, 0) - 
+                    0 - /* Replace pl.subs_ahm with 0 */
+                    0 - /* Replace pl.main_dealer with 0 */
+                    IFNULL(mb.perk_notice, 0) +
+                    (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
+                    spk.promo_pusat
+                ) - 0 + spk.saving /* Replace spk.perk_adm_wil with 0 */
+            ) AS margin_unit
+        FROM tbl_spk AS spk 
+        INNER JOIN tbl_bast AS bast 
+            ON bast.kode_spk = spk.kode_spk 
+        LEFT JOIN tbl_data_induk_finance AS mf 
+            ON spk.kode_finance = mf.kode_finance 
+        INNER JOIN vi_data_induk_barang_motor AS mb 
+            ON spk.kendaraan_warna_id = mb.data_id 
+        INNER JOIN tbl_data_induk_pelanggan AS mp 
+            ON spk.kode_pelanggan_faktur = mp.pelanggan_id 
+        INNER JOIN tbl_data_induk_karyawan AS mk_sales 
+            ON spk.sales = mk_sales.nik 
+        INNER JOIN tbl_data_induk_karyawan AS mk_spv 
+            ON spk.supervisor = mk_spv.nik 
+        LEFT JOIN tbl_sub_barang_masuk AS sbm 
+            ON bast.no_rangka = sbm.no_rangka
+        LEFT JOIN tbl_barang_masuk AS bm 
+            ON sbm.kode_bm = bm.kode_bm
+        LEFT JOIN vi_do_lengkap AS dor 
+            ON bm.no_do = dor.no_do 
+            AND mb.kode_warna_lengkap = dor.kode_barang_lengkap
+        LEFT JOIN tbl_penagihan_leasing pl 
+            ON pl.kode_bast = bast.kode_bast
+        WHERE DATE_FORMAT(bast.tgl_bast, '%Y-%m-%d') BETWEEN %s AND %s
+        """
     
     try:
         # Get vehicle data
@@ -134,7 +203,7 @@ def get_vehicle_data(start_date: str, end_date: str) -> Dict[str, Any]:
         }
         
     except mysql.connector.Error as err:
-        print(f"Database error: {err}")
+        print(f"Database error ({database_name}): {err}")
         return {
             'data': [],
             'summary': {
