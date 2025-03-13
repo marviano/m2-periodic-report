@@ -2,10 +2,8 @@
 #untuk bikin .exe
 #pyinstaller --onefile report_scheduler.py
 
-import schedule
 import time
 import subprocess
-import sys
 import logging
 from datetime import datetime
 
@@ -36,19 +34,41 @@ def run_report():
     except Exception as e:
         logging.error(f"Failed to run report: {e}")
 
-# Schedule jobs every 2 hours starting from 12:00
-schedule.every().day.at("12:00").do(run_report)
-schedule.every().day.at("14:00").do(run_report)
-schedule.every().day.at("16:00").do(run_report)
-schedule.every().day.at("18:00").do(run_report)
-schedule.every().day.at("20:00").do(run_report)
-schedule.every().day.at("22:00").do(run_report)
+# Schedule times (hour) at which reports should run
+SCHEDULE_HOURS = [12, 14, 15, 16, 18, 20, 22]
+GRACE_MINUTES = 15
 
-logging.info("Scheduler started. Reports will run every 2 hours starting from 12:00")
-print("Scheduler started. Reports will run every 2 hours starting from 12:00")
-print("Scheduled times: 12:00, 14:00, 16:00, 18:00, 20:00, 22:00")
+# Keep track of which report periods have already run today
+already_run = set()
+
+def check_and_run_reports():
+    now = datetime.now()
+    current_date = now.strftime("%Y-%m-%d")
+    current_hour = now.hour
+    current_minute = now.minute
+    
+    # Check if the current hour is a scheduled hour
+    if current_hour in SCHEDULE_HOURS:
+        # Check if within grace period (first 15 minutes of the hour)
+        if current_minute < GRACE_MINUTES:
+            # Create a unique key for this scheduled period
+            period_key = f"{current_date}-{current_hour}"
+            
+            # Only run if we haven't already run for this period
+            if period_key not in already_run:
+                logging.info(f"Running report within grace period: {current_hour}:00-{current_hour}:{GRACE_MINUTES}")
+                run_report()
+                already_run.add(period_key)
+    
+    # Reset the already_run set at midnight to prepare for a new day
+    if current_hour == 0 and current_minute == 0:
+        already_run.clear()
+
+logging.info("Scheduler started with 15-minute grace periods")
+print("Scheduler started with 15-minute grace periods")
+print(f"Reports will run at {SCHEDULE_HOURS} with a {GRACE_MINUTES}-minute grace period")
 
 # Keep the scheduler running
 while True:
-    schedule.run_pending()
+    check_and_run_reports()
     time.sleep(60)  # Check every minute
