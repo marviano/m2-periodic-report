@@ -1,0 +1,5 @@
+m2_magetan kalkulasinya tidak/belum include:
+pl.subs_ahm, pl.main_dealer, spk.perk_adm_wil
+
+m2_madiun perhitungan kreditnya belum termasuk:
+dp_gross (ada di tabel penagihan leasing)
