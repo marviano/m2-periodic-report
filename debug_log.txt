@@ -1,0 +1,9 @@
+===================================
+Report Scheduler Started
+Current time:  9.55.50,78
+===================================
+User profile: C:\Users\alvus
+Current directory: C:\Users\alvus\Desktop\m2-periodic-report
+Batch file location: C:\Users\alvus\Desktop\m2-periodic-report\
+WMIC Date: //
+WMIC Time: ::

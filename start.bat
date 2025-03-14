@@ -1,51 +1,21 @@
-@echo on
-echo ===================================
-echo Report Scheduler Started
-echo Current time: %time%
-echo ===================================
+@echo off
+echo Starting Vehicle Reporting System...
+echo.
 
-:: Get current hour and minute
-for /f "tokens=1,2 delims=:" %%a in ("%time%") do (
-    set hour=%%a
-    set minute=%%b
-)
-:: Remove leading space if hour is single digit
-set hour=%hour: =%
+REM Set the working directory to the script location
+cd /d %~dp0
 
-:: Check if current hour is one of our target hours (12, 14, 16, 18, 20, 22)
-:: and if minute is less than 15 (within grace period)
-set /a minute_num=%minute%
-if %minute_num% LSS 15 (
-    if %hour%==12 goto RunReport
-    if %hour%==14 goto RunReport
-    if %hour%==16 goto RunReport
-    if %hour%==18 goto RunReport
-    if %hour%==20 goto RunReport
-    if %hour%==22 goto RunReport
+REM Check if Python is in the PATH
+where python >nul 2>nul
+if %ERRORLEVEL% neq 0 (
+    echo Python not found in PATH. Please install Python or add it to your PATH.
+    pause
+    exit /b 1
 )
 
-echo Current hour: %hour%
-echo Current minute: %minute%
-echo Not within reporting time window (need hour=12,14,16,18,20,22 and minute<15)
-goto End
+REM Run the report scheduler script
+echo Running report scheduler...
+python report_scheduler.py
 
-:RunReport
-echo Running report at %time%
-cd /d C:\Users\USER\Desktop\m2-periodic-report
-echo Current directory: %CD%
-echo Attempting to run vehicle_reporting.py
-if exist "vehicle_reporting.py" (
-    echo File found: vehicle_reporting.py
-    python vehicle_reporting.py >> batch_log.txt 2>&1
-) else (
-    echo ERROR: vehicle_reporting.py not found in %CD%
-    dir >> batch_log.txt
-)
-echo Report completed at %time%
-
-:End
-echo ===================================
-echo Execution completed at %time%
-echo Check batch_log.txt for details
-echo ===================================
+REM If the script exits, pause to see any error messages
 pause
