@@ -1,6 +1,8 @@
-@echo off
+@echo on
+echo ===================================
 echo Report Scheduler Started
 echo Current time: %time%
+echo ===================================
 
 :: Get current hour and minute
 for /f "tokens=1,2 delims=:" %%a in ("%time%") do (
@@ -22,13 +24,28 @@ if %minute_num% LSS 15 (
     if %hour%==22 goto RunReport
 )
 
-echo Not within reporting time window
+echo Current hour: %hour%
+echo Current minute: %minute%
+echo Not within reporting time window (need hour=12,14,16,18,20,22 and minute<15)
 goto End
 
 :RunReport
 echo Running report at %time%
-cd /d C:\path\to\your\report\directory
-python vehicle_reporting.py >> scheduler.log 2>&1
+cd /d C:\Users\USER\Desktop\m2-periodic-report
+echo Current directory: %CD%
+echo Attempting to run vehicle_reporting.py
+if exist "vehicle_reporting.py" (
+    echo File found: vehicle_reporting.py
+    python vehicle_reporting.py >> batch_log.txt 2>&1
+) else (
+    echo ERROR: vehicle_reporting.py not found in %CD%
+    dir >> batch_log.txt
+)
 echo Report completed at %time%
 
 :End
+echo ===================================
+echo Execution completed at %time%
+echo Check batch_log.txt for details
+echo ===================================
+pause
