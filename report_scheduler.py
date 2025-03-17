@@ -35,7 +35,7 @@ def run_report():
         logging.error(f"Failed to run report: {e}")
 
 # Schedule times (hour) at which reports should run
-SCHEDULE_HOURS = [12, 14, 15, 16, 18, 20, 21, 22]
+SCHEDULE_HOURS = [12, 14, 16, 18, 20]
 GRACE_MINUTES = 15
 
 # Keep track of which report periods have already run today
