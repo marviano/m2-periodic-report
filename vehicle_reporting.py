@@ -62,354 +62,280 @@ def calculate_yoy_changes(current_data, last_year_data):
 
 def create_html_report(daily_data, weekly_data, monthly_data, 
                       daily_yoy, weekly_yoy, monthly_yoy, location_name, report_date=None):
-    """Create HTML formatted report showing all periods with date ranges and YoY comparison.
+    """Create HTML formatted report showing daily and monthly data with YoY comparison and payment methods.
     
     Args:
         daily_data: Data for the specific day
-        weekly_data: Data for the week
+        weekly_data: Data for the week (not used)
         monthly_data: Data for the month
         daily_yoy: Year-over-year comparison for the day
-        weekly_yoy: Year-over-year comparison for the week
+        weekly_yoy: Year-over-year comparison for the week (not used)
         monthly_yoy: Year-over-year comparison for the month
         location_name: Name of the location (e.g., "M2 Madiun" or "M2 Magetan")
         report_date: Specific date for the report (default: current date)
     """
     # Use the specified report date or today's date
     today = report_date if report_date else datetime.now().date()
-    week_start = today - timedelta(days=today.weekday())
     month_start = today.replace(day=1)
     last_year = today.replace(year=today.year - 1)
-    last_year_week_start = week_start.replace(year=week_start.year - 1)
     last_year_month_start = month_start.replace(year=month_start.year - 1)
     
     current_time = datetime.now().strftime("%H:%M:%S")
     
     html = f"""
+    <!DOCTYPE html>
     <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-            body {{ 
-                font-family: Arial, sans-serif; 
-                line-height: 1.6; 
-                color: #333;
+            @media only screen and (max-width: 600px) {{
+                .container {{
+                    width: 100% !important;
+                    padding: 8px !important;
+                }}
+                .card {{
+                    margin: 8px 0 !important;
+                }}
+                .stat-grid {{
+                    grid-template-columns: 1fr !important;
+                }}
+            }}
+            body {{
                 margin: 0;
-                padding: 20px;
-                background-color: #f5f5f5;
+                padding: 0;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
             }}
             .container {{
-                max-width: 800px;
+                max-width: 600px;
                 margin: 0 auto;
-                background-color: white;
-                padding: 30px;
-                border-radius: 15px;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                padding: 12px;
+                background-color: #ffffff;
             }}
-            h1 {{ 
-                color: #2c3e50; 
+            .header {{
                 text-align: center;
-                margin-bottom: 30px;
-                font-size: 28px;
+                padding: 12px 0;
+                background-color: #e70000;
+                color: white;
+                border-radius: 6px 6px 0 0;
             }}
-            .period-box {{ 
-                background-color: white;
-                padding: 25px;
-                margin: 20px 0;
-                border-radius: 12px;
-                border: 1px solid #e1e1e1;
+            .header h1 {{
+                margin: 0;
+                font-size: 20px;
+                font-weight: 600;
             }}
-            .daily {{ border-left: 5px solid #3498db; }}
-            .weekly {{ border-left: 5px solid #2ecc71; }}
-            .monthly {{ border-left: 5px solid #e74c3c; }}
             .date-range {{
-                font-size: 14px;
-                color: #666;
-                margin-bottom: 10px;
+                font-size: 12px;
+                color: #ffffff;
+                opacity: 0.9;
+                margin-top: 4px;
             }}
-            .units {{
-                font-size: 32px;
-                font-weight: bold;
-                color: #2c3e50;
-                margin: 15px 0;
-            }}
-            .value {{
-                font-size: 18px;
-                color: #27ae60;
-                font-weight: bold;
-            }}
-            .margin-box {{
-                background-color: #e8f5e9;
-                padding: 15px;
-                margin-top: 15px;
-                border-radius: 8px;
-            }}
-            .margin-title {{
-                font-size: 16px;
-                color: #2c3e50;
-                margin-bottom: 10px;
-                font-weight: bold;
-            }}
-            .margin-grid {{
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                gap: 15px;
-            }}
-            .margin-item {{
-                text-align: center;
-                padding: 10px;
+            .card {{
                 background: white;
                 border-radius: 6px;
                 box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                margin: 12px 0;
+                overflow: hidden;
+                border: 1px solid #e70000;
             }}
-            .margin-value {{
-                font-size: 20px;
-                font-weight: bold;
-                color: #27ae60;
+            .card-header {{
+                background-color: #e70000;
+                padding: 8px 12px;
+                border-bottom: 1px solid #e70000;
             }}
-            .margin-label {{
-                font-size: 14px;
-                color: #666;
-                margin-top: 5px;
-            }}
-            .comparison {{
-                margin-top: 15px;
-                padding-top: 15px;
-                border-top: 1px dashed #e1e1e1;
-            }}
-            .comparison-title {{
+            .card-title {{
+                margin: 0;
                 font-size: 16px;
-                color: #666;
-                margin-bottom: 10px;
+                color: white;
+                font-weight: 600;
             }}
-            .comparison-value {{
-                font-size: 16px;
-                color: #666;
+            .card-body {{
+                padding: 12px;
             }}
-            .comparison-change {{
-                font-size: 16px;
-                color: #2ecc71;
+            .stat-grid {{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                margin-bottom: 12px;
             }}
-            .comparison-change.negative {{
-                color: #e74c3c;
-            }}
-            .period-title {{
-                font-size: 20px;
-                font-weight: bold;
-                color: #2c3e50;
-                margin-bottom: 5px;
-            }}
-            .footer {{ 
+            .stat-item {{
                 text-align: center;
-                margin-top: 40px;
-                padding-top: 20px;
-                border-top: 1px solid #eee;
-                color: #666;
-                font-size: 14px;
+                padding: 8px;
+                background: #fff;
+                border-radius: 4px;
+                border: 1px solid #e70000;
             }}
-            .generation-time {{
-                text-align: right;
-                color: #666;
-                font-size: 14px;
-                margin-bottom: 20px;
-            }}
-            .payment-box {{
-                background-color: #f8f9fa;
-                padding: 15px;
-                margin-top: 15px;
-                border-radius: 8px;
-            }}
-            .payment-title {{
-                font-size: 16px;
-                color: #2c3e50;
-                margin-bottom: 10px;
+            .stat-value {{
+                font-size: 20px;
                 font-weight: bold;
+                color: #333;
+                margin-bottom: 2px;
+            }}
+            .stat-label {{
+                font-size: 12px;
+                color: #666;
             }}
             .payment-grid {{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 15px;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                margin-bottom: 12px;
             }}
             .payment-item {{
                 text-align: center;
-                padding: 10px;
-                background: white;
-                border-radius: 6px;
-                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                padding: 8px;
+                background: #fff;
+                border-radius: 4px;
+                border: 1px solid #e70000;
             }}
             .payment-count {{
-                font-size: 24px;
+                font-size: 20px;
                 font-weight: bold;
-                color: #2c3e50;
+                color: #333;
+                margin-bottom: 2px;
+            }}
+            .payment-value {{
+                font-size: 14px;
+                color: #333;
+                font-weight: 500;
+                margin-bottom: 2px;
             }}
             .payment-label {{
-                font-size: 14px;
+                font-size: 12px;
                 color: #666;
-                margin-top: 5px;
+            }}
+            .comparison {{
+                background: #fff;
+                padding: 8px;
+                border-radius: 4px;
+                margin-top: 12px;
+                border: 1px solid #e70000;
+            }}
+            .comparison-title {{
+                font-size: 14px;
+                color: #333;
+                margin-bottom: 6px;
+                font-weight: 600;
+            }}
+            .comparison-value {{
+                font-size: 12px;
+                color: #666;
+                margin-bottom: 4px;
+            }}
+            .comparison-change {{
+                font-size: 12px;
+                color: #34a853;
+                font-weight: 500;
+            }}
+            .comparison-change.negative {{
+                color: #ea4335;
+            }}
+            .footer {{
+                text-align: center;
+                padding: 12px;
+                color: #666;
+                font-size: 11px;
+                border-top: 1px solid #e70000;
             }}
         </style>
     </head>
     <body>
-        <div class="container">            
-            <div class="period-box daily">
-                <div class="period-title">Penjualan Hari Ini</div>
-                <div class="date-range">Tanggal: {format_date(today)}</div>
-                <div class="units">{daily_data['summary']['total_units']} Unit</div>
-                <div class="value">{format_currency(daily_data['summary']['total_value'])}</div>
-
-                <div class="margin-box">
-                    <div class="margin-title">Margin Penjualan</div>
-                    <div class="margin-grid">
-                        <div class="margin-item">
-                            <div class="margin-value">{format_currency(daily_data['summary']['total_margin'])}</div>
-                            <div class="margin-label">Total Margin</div>
+        <div class="container">
+            <div class="header">
+                <h1>{location_name}</h1>
+                <div class="date-range">{format_date(today)}</div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Penjualan Hari Ini</h2>
+                </div>
+                <div class="card-body">
+                    <div class="stat-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">{daily_data['summary']['total_units']}</div>
+                            <div class="stat-label">Unit Terjual</div>
                         </div>
-                        <div class="margin-item">
-                            <div class="margin-value">{format_currency(daily_data['summary']['average_margin'])}</div>
-                            <div class="margin-label">Rata-rata per Unit</div>
-                        </div>
-                        <div class="margin-item">
-                            <div class="margin-value">{format_percentage(daily_data['summary']['margin_percentage'])}</div>
-                            <div class="margin-label">Persentase Margin</div>
+                        <div class="stat-item">
+                            <div class="stat-value">{format_currency(daily_data['summary']['total_value'])}</div>
+                            <div class="stat-label">Total Nilai</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="payment-box">
-                    <div class="payment-title">Metode Pembayaran</div>
+                    
                     <div class="payment-grid">
                         <div class="payment-item">
                             <div class="payment-count">{daily_data['summary']['payment_methods']['tunai']['count']}</div>
-                            <div class="margin-value">{format_currency(daily_data['summary']['payment_methods']['tunai']['margin'])}</div>
+                            <div class="payment-value">{format_currency(daily_data['summary']['payment_methods']['tunai']['margin'])}</div>
                             <div class="payment-label">Tunai</div>
                         </div>
                         <div class="payment-item">
                             <div class="payment-count">{daily_data['summary']['payment_methods']['kredit']['count']}</div>
-                            <div class="margin-value">{format_currency(daily_data['summary']['payment_methods']['kredit']['margin'])}</div>
+                            <div class="payment-value">{format_currency(daily_data['summary']['payment_methods']['kredit']['margin'])}</div>
                             <div class="payment-label">Kredit</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="comparison">
-                    <div class="comparison-title">Perbandingan dengan {format_date(last_year)}</div>
-                    <div class="comparison-value">
-                        Tahun lalu: {daily_yoy['last_year_units']} Unit 
-                        ({format_currency(daily_yoy['last_year_value'])})
-                    </div>
-                    <div class="comparison-change {'' if daily_yoy['unit_change'] >= 0 else 'negative'}">
-                        Perubahan: {daily_yoy['unit_change']:+d} Unit 
-                        ({format_percentage(daily_yoy['unit_change_pct'])})
+                    
+                    <div class="comparison">
+                        <div class="comparison-title">Perbandingan dengan {format_date(last_year)}</div>
+                        <div class="comparison-value">
+                            Tahun lalu: {daily_yoy['last_year_units']} Unit 
+                            ({format_currency(daily_yoy['last_year_value'])})
+                        </div>
+                        <div class="comparison-change {'' if daily_yoy['unit_change'] >= 0 else 'negative'}">
+                            Perubahan: {daily_yoy['unit_change']:+d} Unit 
+                            ({format_percentage(daily_yoy['unit_change_pct'])})
+                        </div>
                     </div>
                 </div>
             </div>
             
-            <div class="period-box weekly">
-                <div class="period-title">Penjualan Minggu Ini</div>
-                <div class="date-range">{format_date(week_start)} - {format_date(today)}</div>
-                <div class="units">{weekly_data['summary']['total_units']} Unit</div>
-                <div class="value">{format_currency(weekly_data['summary']['total_value'])}</div>
-
-                <div class="margin-box">
-                    <div class="margin-title">Margin Penjualan</div>
-                    <div class="margin-grid">
-                        <div class="margin-item">
-                            <div class="margin-value">{format_currency(weekly_data['summary']['total_margin'])}</div>
-                            <div class="margin-label">Total Margin</div>
-                        </div>
-                        <div class="margin-item">
-                            <div class="margin-value">{format_currency(weekly_data['summary']['average_margin'])}</div>
-                            <div class="margin-label">Rata-rata per Unit</div>
-                        </div>
-                        <div class="margin-item">
-                            <div class="margin-value">{format_percentage(weekly_data['summary']['margin_percentage'])}</div>
-                            <div class="margin-label">Persentase Margin</div>
-                        </div>
-                    </div>
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Penjualan Bulan Ini</h2>
                 </div>
-                
-                <div class="payment-box">
-                    <div class="payment-title">Metode Pembayaran</div>
-                    <div class="payment-grid">
-                        <div class="payment-item">
-                            <div class="payment-count">{weekly_data['summary']['payment_methods']['tunai']['count']}</div>
-                            <div class="margin-value">{format_currency(weekly_data['summary']['payment_methods']['tunai']['margin'])}</div>
-                            <div class="payment-label">Tunai</div>
+                <div class="card-body">
+                    <div class="stat-grid">
+                        <div class="stat-item">
+                            <div class="stat-value">{monthly_data['summary']['total_units']}</div>
+                            <div class="stat-label">Unit Terjual</div>
                         </div>
-                        <div class="payment-item">
-                            <div class="payment-count">{weekly_data['summary']['payment_methods']['kredit']['count']}</div>
-                            <div class="margin-value">{format_currency(weekly_data['summary']['payment_methods']['kredit']['margin'])}</div>
-                            <div class="payment-label">Kredit</div>
+                        <div class="stat-item">
+                            <div class="stat-value">{format_currency(monthly_data['summary']['total_value'])}</div>
+                            <div class="stat-label">Total Nilai</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="comparison">
-                    <div class="comparison-title">Perbandingan dengan {format_date(last_year_week_start)} - {format_date(last_year)}</div>
-                    <div class="comparison-value">
-                        Tahun lalu: {weekly_yoy['last_year_units']} Unit 
-                        ({format_currency(weekly_yoy['last_year_value'])})
-                    </div>
-                    <div class="comparison-change {'' if weekly_yoy['unit_change'] >= 0 else 'negative'}">
-                        Perubahan: {weekly_yoy['unit_change']:+d} Unit 
-                        ({format_percentage(weekly_yoy['unit_change_pct'])})
-                    </div>
-                </div>
-            </div>
-            
-            <div class="period-box monthly">
-                <div class="period-title">Penjualan Bulan Ini</div>
-                <div class="date-range">{format_date(month_start)} - {format_date(today)}</div>
-                <div class="units">{monthly_data['summary']['total_units']} Unit</div>
-                <div class="value">{format_currency(monthly_data['summary']['total_value'])}</div>
-
-                <div class="margin-box">
-                    <div class="margin-title">Margin Penjualan</div>
-                    <div class="margin-grid">
-                        <div class="margin-item">
-                            <div class="margin-value">{format_currency(monthly_data['summary']['total_margin'])}</div>
-                            <div class="margin-label">Total Margin</div>
-                        </div>
-                        <div class="margin-item">
-                            <div class="margin-value">{format_currency(monthly_data['summary']['average_margin'])}</div>
-                            <div class="margin-label">Rata-rata per Unit</div>
-                        </div>
-                        <div class="margin-item">
-                            <div class="margin-value">{format_percentage(monthly_data['summary']['margin_percentage'])}</div>
-                            <div class="margin-label">Persentase Margin</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="payment-box">
-                    <div class="payment-title">Metode Pembayaran</div>
+                    
                     <div class="payment-grid">
                         <div class="payment-item">
                             <div class="payment-count">{monthly_data['summary']['payment_methods']['tunai']['count']}</div>
-                            <div class="margin-value">{format_currency(monthly_data['summary']['payment_methods']['tunai']['margin'])}</div>
+                            <div class="payment-value">{format_currency(monthly_data['summary']['payment_methods']['tunai']['margin'])}</div>
                             <div class="payment-label">Tunai</div>
                         </div>
                         <div class="payment-item">
                             <div class="payment-count">{monthly_data['summary']['payment_methods']['kredit']['count']}</div>
-                            <div class="margin-value">{format_currency(monthly_data['summary']['payment_methods']['kredit']['margin'])}</div>
+                            <div class="payment-value">{format_currency(monthly_data['summary']['payment_methods']['kredit']['margin'])}</div>
                             <div class="payment-label">Kredit</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="comparison">
-                    <div class="comparison-title">Perbandingan dengan {format_date(last_year_month_start)} - {format_date(last_year)}</div>
-                    <div class="comparison-value">
-                        Tahun lalu: {monthly_yoy['last_year_units']} Unit 
-                        ({format_currency(monthly_yoy['last_year_value'])})
-                    </div>
-                    <div class="comparison-change {'' if monthly_yoy['unit_change'] >= 0 else 'negative'}">
-                        Perubahan: {monthly_yoy['unit_change']:+d} Unit 
-                        ({format_percentage(monthly_yoy['unit_change_pct'])})
+                    
+                    <div class="comparison">
+                        <div class="comparison-title">Perbandingan dengan {format_date(last_year_month_start)} - {format_date(last_year)}</div>
+                        <div class="comparison-value">
+                            Tahun lalu: {monthly_yoy['last_year_units']} Unit 
+                            ({format_currency(monthly_yoy['last_year_value'])})
+                        </div>
+                        <div class="comparison-change {'' if monthly_yoy['unit_change'] >= 0 else 'negative'}">
+                            Perubahan: {monthly_yoy['unit_change']:+d} Unit 
+                            ({format_percentage(monthly_yoy['unit_change_pct'])})
+                        </div>
                     </div>
                 </div>
             </div>
-
+            
             <div class="footer">
-                <p><a href="https://github.com/marviano" style="color: #3498db; text-decoration: none;">github.com/marviano</a></p>
+                <p>Laporan ini dibuat secara otomatis pada {current_time}</p>
             </div>
         </div>
     </body>
@@ -452,8 +378,8 @@ def process_location_data(db_name, location_name, specific_date=None):
         location_name (str): Name of the location for the report title
         specific_date (date, optional): Specific date for the report. Defaults to None (current date).
     """
-    # recipients = ["alvusebastian@gmail.com"]
-    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
+    recipients = ["alvusebastian@gmail.com"]
+    # recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
     
     try:
         # Use the provided date or today's date
