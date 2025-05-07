@@ -60,8 +60,40 @@ def calculate_yoy_changes(current_data, last_year_data):
         'last_year_value': last_year_value
     }
 
+def calculate_mom_changes(current_data, last_month_data):
+    if not current_data or not last_month_data:
+        return {
+            'unit_change': 0,
+            'unit_change_pct': 0,
+            'value_change': 0,
+            'value_change_pct': 0,
+            'last_month_units': 0,
+            'last_month_value': 0
+        }
+    
+    current_units = current_data['summary']['total_units'] if current_data and current_data['summary']['total_units'] else 0
+    current_value = current_data['summary']['total_value'] if current_data and current_data['summary']['total_value'] else 0
+    last_month_units = last_month_data['summary']['total_units'] if last_month_data and last_month_data['summary']['total_units'] else 0
+    last_month_value = last_month_data['summary']['total_value'] if last_month_data and last_month_data['summary']['total_value'] else 0
+    
+    unit_change = current_units - last_month_units
+    unit_change_pct = ((current_units / last_month_units) - 1) * 100 if last_month_units > 0 else 0
+    
+    value_change = current_value - last_month_value
+    value_change_pct = ((current_value / last_month_value) - 1) * 100 if last_month_value > 0 else 0
+    
+    return {
+        'unit_change': unit_change,
+        'unit_change_pct': unit_change_pct,
+        'value_change': value_change,
+        'value_change_pct': value_change_pct,
+        'last_month_units': last_month_units,
+        'last_month_value': last_month_value
+    }
+
 def create_html_report(daily_data, weekly_data, monthly_data, 
-                      daily_yoy, weekly_yoy, monthly_yoy, location_name, report_date=None):
+                      daily_yoy, weekly_yoy, monthly_yoy, location_name, report_date=None, 
+                      daily_mom=None, monthly_mom=None):
     """Create HTML formatted report showing daily and monthly data with YoY comparison and payment methods.
     
     Args:
@@ -73,12 +105,18 @@ def create_html_report(daily_data, weekly_data, monthly_data,
         monthly_yoy: Year-over-year comparison for the month
         location_name: Name of the location (e.g., "M2 Madiun" or "M2 Magetan")
         report_date: Specific date for the report (default: current date)
+        daily_mom: Day-over-month comparison data (same date last month)
+        monthly_mom: Month-over-month comparison data (YTD)
     """
     # Use the specified report date or today's date
     today = report_date if report_date else datetime.now().date()
     month_start = today.replace(day=1)
     last_year = today.replace(year=today.year - 1)
     last_year_month_start = month_start.replace(year=month_start.year - 1)
+    
+    # Calculate last month's same date
+    last_month = today.replace(day=1) - timedelta(days=1)
+    last_month = last_month.replace(day=min(today.day, last_month.day))
     
     current_time = datetime.now().strftime("%H:%M:%S")
     
@@ -288,6 +326,18 @@ def create_html_report(daily_data, weekly_data, monthly_data,
                             ({format_percentage(daily_yoy['unit_change_pct'])})
                         </div>
                     </div>
+                    
+                    <div class="comparison">
+                        <div class="comparison-title">Perbandingan dengan {format_date(last_month)}</div>
+                        <div class="comparison-value">
+                            Bulan lalu: {daily_mom['last_month_units']} Unit 
+                            ({format_currency(daily_mom['last_month_value'])})
+                        </div>
+                        <div class="comparison-change {'' if daily_mom['unit_change'] >= 0 else 'negative'}">
+                            Perubahan: {daily_mom['unit_change']:+d} Unit 
+                            ({format_percentage(daily_mom['unit_change_pct'])})
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -321,7 +371,19 @@ def create_html_report(daily_data, weekly_data, monthly_data,
                     </div>
                     
                     <div class="comparison">
-                        <div class="comparison-title">Perbandingan dengan {format_date(last_year_month_start)} - {format_date(last_year)}</div>
+                        <div class="comparison-title">Bulan lalu ({format_date(last_month.replace(day=1))} - {format_date(last_month)})</div>
+                        <div class="comparison-value">
+                            Bulan lalu: {monthly_mom['last_month_units']} Unit 
+                            ({format_currency(monthly_mom['last_month_value'])})
+                        </div>
+                        <div class="comparison-change {'' if monthly_mom['unit_change'] >= 0 else 'negative'}">
+                            Perubahan: {monthly_mom['unit_change']:+d} Unit 
+                            ({format_percentage(monthly_mom['unit_change_pct'])})
+                        </div>
+                    </div>
+                    
+                    <div class="comparison">
+                        <div class="comparison-title">Tahun lalu ({format_date(last_year_month_start)} - {format_date(last_year)})</div>
                         <div class="comparison-value">
                             Tahun lalu: {monthly_yoy['last_year_units']} Unit 
                             ({format_currency(monthly_yoy['last_year_value'])})
@@ -378,8 +440,8 @@ def process_location_data(db_name, location_name, specific_date=None):
         location_name (str): Name of the location for the report title
         specific_date (date, optional): Specific date for the report. Defaults to None (current date).
     """
-    # recipients = ["alvusebastian@gmail.com"]
-    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
+    recipients = ["alvusebastian@gmail.com"]
+    # recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
     
     try:
         # Use the provided date or today's date
@@ -401,53 +463,60 @@ def process_location_data(db_name, location_name, specific_date=None):
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
         print(f"Data harian {location_name} berhasil diambil")
         
-        # Get this week's data and last year comparison
-        week_start = today - timedelta(days=today.weekday())
-        weekly_data = get_vehicle_data(
-            start_date=week_start.strftime('%Y-%m-%d'),
-            end_date=today.strftime('%Y-%m-%d'),
+        # Get last month's same date data
+        last_month = today.replace(day=1) - timedelta(days=1)
+        last_month = last_month.replace(day=min(today.day, last_month.day))
+        daily_last_month = get_vehicle_data(
+            start_date=last_month.strftime('%Y-%m-%d'),
+            end_date=last_month.strftime('%Y-%m-%d'),
             database_name=db_name
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
-        last_year_week_start = week_start.replace(year=week_start.year - 1)
-        weekly_last_year = get_vehicle_data(
-            start_date=last_year_week_start.strftime('%Y-%m-%d'),
-            end_date=last_year.strftime('%Y-%m-%d'),
-            database_name=db_name
-        ) or {'summary': {'total_units': 0, 'total_value': 0}}
-        print(f"Data mingguan {location_name} berhasil diambil")
         
-        # Get this month's data and last year comparison
+        # Get this month's data and last month YTD comparison
         month_start = today.replace(day=1)
         monthly_data = get_vehicle_data(
             start_date=month_start.strftime('%Y-%m-%d'),
             end_date=today.strftime('%Y-%m-%d'),
             database_name=db_name
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
+        
+        # Get last month's YTD data
+        last_month_start = last_month.replace(day=1)
+        last_month_end = last_month
+        monthly_last_month = get_vehicle_data(
+            start_date=last_month_start.strftime('%Y-%m-%d'),
+            end_date=last_month_end.strftime('%Y-%m-%d'),
+            database_name=db_name
+        ) or {'summary': {'total_units': 0, 'total_value': 0}}
+        print(f"Data bulanan {location_name} berhasil diambil")
+        
+        # Get last year's monthly data
         last_year_month_start = month_start.replace(year=month_start.year - 1)
         monthly_last_year = get_vehicle_data(
             start_date=last_year_month_start.strftime('%Y-%m-%d'),
             end_date=last_year.strftime('%Y-%m-%d'),
             database_name=db_name
         ) or {'summary': {'total_units': 0, 'total_value': 0}}
-        print(f"Data bulanan {location_name} berhasil diambil")
         
-        if all([daily_data, daily_last_year, weekly_data, weekly_last_year, 
-                monthly_data, monthly_last_year]):
+        if all([daily_data, daily_last_year, daily_last_month, monthly_data, monthly_last_month, monthly_last_year]):
             
-            # Calculate all year-over-year comparisons
+            # Calculate all comparisons
             daily_yoy = calculate_yoy_changes(daily_data, daily_last_year)
-            weekly_yoy = calculate_yoy_changes(weekly_data, weekly_last_year)
+            daily_mom = calculate_mom_changes(daily_data, daily_last_month)
             monthly_yoy = calculate_yoy_changes(monthly_data, monthly_last_year)
+            monthly_mom = calculate_mom_changes(monthly_data, monthly_last_month)
             
             html_report = create_html_report(
                 daily_data, 
-                weekly_data, 
+                None,  # weekly data not used
                 monthly_data,
                 daily_yoy,
-                weekly_yoy,
+                None,  # weekly yoy not used
                 monthly_yoy,
                 location_name,
-                report_date=today
+                report_date=today,
+                daily_mom=daily_mom,
+                monthly_mom=monthly_mom
             )
             send_email(
                 f"{location_name} today, DO: {daily_data['summary']['total_units']}", 
