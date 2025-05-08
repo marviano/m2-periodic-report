@@ -16,23 +16,38 @@ logging.basicConfig(
 
 def run_report():
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    logging.info(f"Running vehicle report at {current_time}")
+    logging.info(f"Running reports at {current_time}")
     try:
-        # Use the following line if running the Python file directly
-        result = subprocess.run(["python", "vehicle_reporting.py"], 
-                               capture_output=True, text=True)
+        # Get current date for YTD report
+        today = datetime.now()
+        start_date = today.replace(month=1, day=1).strftime('%Y-%m-%d')
+        end_date = today.strftime('%Y-%m-%d')
         
-        # Or use this if using the compiled exe
-        # result = subprocess.run(["vehicle_reporting.exe"], 
-        #                       capture_output=True, text=True)
+        # Run vehicle report
+        logging.info("Running vehicle report...")
+        vehicle_result = subprocess.run(["python", "vehicle_reporting.py"], 
+                                      capture_output=True, text=True)
         
-        logging.info(f"Report completed with return code: {result.returncode}")
-        if result.stdout:
-            logging.info(f"Output: {result.stdout}")
-        if result.stderr:
-            logging.error(f"Error: {result.stderr}")
+        # Run SPV report
+        logging.info("Running SPV performance report...")
+        spv_result = subprocess.run(["python", "spv_report.py", start_date, end_date],
+                                  capture_output=True, text=True)
+        
+        # Log results
+        logging.info(f"Vehicle report completed with return code: {vehicle_result.returncode}")
+        if vehicle_result.stdout:
+            logging.info(f"Vehicle report output: {vehicle_result.stdout}")
+        if vehicle_result.stderr:
+            logging.error(f"Vehicle report error: {vehicle_result.stderr}")
+            
+        logging.info(f"SPV report completed with return code: {spv_result.returncode}")
+        if spv_result.stdout:
+            logging.info(f"SPV report output: {spv_result.stdout}")
+        if spv_result.stderr:
+            logging.error(f"SPV report error: {spv_result.stderr}")
+            
     except Exception as e:
-        logging.error(f"Failed to run report: {e}")
+        logging.error(f"Failed to run reports: {e}")
 
 # Schedule times (hour) at which reports should run
 SCHEDULE_HOURS = [12, 14, 16, 18, 20]

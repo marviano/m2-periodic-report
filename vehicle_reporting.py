@@ -519,8 +519,8 @@ def process_location_data(db_name, location_name, specific_date=None):
                 monthly_mom=monthly_mom
             )
             send_email(
-                f"{location_name} today, DO: {daily_data['summary']['total_units']}", 
-                html_report, 
+                f"M2 | {location_name} today, DO: {daily_data['summary']['total_units']}",
+                html_report,
                 recipients
             )
             print(f"Laporan {location_name} untuk tanggal {format_date(today)} berhasil dikirim")
