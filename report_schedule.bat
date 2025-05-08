@@ -18,4 +18,4 @@ echo Running report scheduler...
 python report_scheduler.py
 
 REM If the script exits, pause to see any error messages
-pause
+pause 

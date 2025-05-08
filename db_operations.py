@@ -223,3 +223,73 @@ def get_vehicle_data(start_date: str, end_date: str, database_name="honda_mis") 
     finally:
         cursor.close()
         conn.close()
+
+def get_spv_performance(start_date: str, end_date: str, database_name="honda_mis") -> Dict[str, Any]:
+    """
+    Retrieve SPV performance data from database for the specified date range.
+    
+    Args:
+        start_date (str): Start date in YYYY-MM-DD format
+        end_date (str): End date in YYYY-MM-DD format
+        database_name (str): Name of the database to connect to. Default is "honda_mis".
+    """
+    conn = connect_to_database(database_name)
+    cursor = conn.cursor(dictionary=True)
+    
+    # Get current date for today's stats
+    today = datetime.now().strftime('%Y-%m-%d')
+    
+    # Get first day of current month for MTD
+    first_day_of_month = datetime.now().replace(day=1).strftime('%Y-%m-%d')
+    
+    # Get first day of current year for YTD
+    first_day_of_year = datetime.now().replace(month=1, day=1).strftime('%Y-%m-%d')
+    
+    spv_query = """
+    SELECT 
+        mk_spv.nama_karyawan AS nama_spv,
+        COUNT(*) as total_do,
+        SUM(CASE WHEN DATE_FORMAT(bast.tgl_bast, '%Y-%m-%d') = %s THEN 1 ELSE 0 END) as today_do,
+        SUM(CASE WHEN DATE_FORMAT(bast.tgl_bast, '%Y-%m-%d') BETWEEN %s AND %s THEN 1 ELSE 0 END) as mtd_do,
+        SUM(CASE WHEN DATE_FORMAT(bast.tgl_bast, '%Y-%m-%d') BETWEEN %s AND %s THEN 1 ELSE 0 END) as ytd_do
+    FROM tbl_bast AS bast 
+    INNER JOIN tbl_spk AS spk 
+        ON bast.kode_spk = spk.kode_spk 
+    INNER JOIN tbl_data_induk_karyawan AS mk_spv 
+        ON spk.supervisor = mk_spv.nik 
+    WHERE DATE_FORMAT(bast.tgl_bast, '%Y-%m-%d') BETWEEN %s AND %s
+    GROUP BY mk_spv.nama_karyawan
+    ORDER BY total_do DESC
+    """
+    
+    try:
+        # Get SPV performance data
+        cursor.execute(spv_query, (
+            today,  # For today's DO
+            first_day_of_month, end_date,  # For MTD
+            first_day_of_year, end_date,  # For YTD
+            start_date, end_date  # For the main date range
+        ))
+        results = cursor.fetchall()
+        
+        if not results:
+            return {'data': []}
+            
+        # Format the results
+        formatted_results = []
+        for row in results:
+            formatted_results.append({
+                'nama_spv': row['nama_spv'],
+                'mtd_do': row['mtd_do'],
+                'ytd_do': row['ytd_do'],
+                'today_do': row['today_do']
+            })
+            
+        return {'data': formatted_results}
+        
+    except mysql.connector.Error as err:
+        print(f"Database error ({database_name}): {err}")
+        return {'data': []}
+    finally:
+        cursor.close()
+        conn.close()

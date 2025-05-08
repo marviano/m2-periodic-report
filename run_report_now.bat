@@ -1,5 +1,5 @@
 @echo off
-echo Running Vehicle Report Immediately...
+echo Running Reports Immediately...
 echo.
 
 REM Set the working directory to the script location
@@ -13,9 +13,29 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-REM Run the vehicle reporting script directly
+REM Get current date for YTD report
+for /f "tokens=2-4 delims=/ " %%a in ('date /t') do (
+    set mm=%%a
+    set dd=%%b
+    set yy=%%c
+)
+
+REM Set start date to January 1st of current year
+set start_date=%yy%-01-01
+
+REM Set end date to today
+set end_date=%yy%-%mm%-%dd%
+
+REM Run the vehicle reporting script
 echo Running vehicle report...
 python vehicle_reporting.py
 
-REM If the script exits, pause to see any error messages
+REM Run the SPV performance report
+echo.
+echo Running SPV performance report...
+python spv_report.py %start_date% %end_date%
+
+echo.
+echo Reports completed!
+echo Press any key to exit...
 pause 
