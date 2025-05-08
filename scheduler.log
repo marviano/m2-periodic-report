@@ -1,3 +1,36 @@
 2025-03-13 14:12:57,467 - Scheduler started. Reports will run every 2 hours starting from 12:00
 2025-03-14 09:58:11,321 - Scheduler started with 15-minute grace periods
 2025-04-23 11:40:11,130 - Scheduler started with 15-minute grace periods
+2025-05-07 17:42:43,847 - Scheduler started with 15-minute grace periods
+2025-05-07 18:00:43,858 - Running report within grace period: 18:00-18:15
+2025-05-07 18:00:43,858 - Running vehicle report at 2025-05-07 18:00:43
+2025-05-07 18:01:06,140 - Report completed with return code: 0
+2025-05-07 18:01:06,140 - Output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 7 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data bulanan M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com
+Laporan M2 Madiun untuk tanggal 7 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 7 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Data bulanan M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com
+Laporan M2 Magetan untuk tanggal 7 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-07 20:00:06,188 - Running report within grace period: 20:00-20:15
+2025-05-07 20:00:06,188 - Running vehicle report at 2025-05-07 20:00:06
+2025-05-07 20:00:33,051 - Report completed with return code: 0
+2025-05-07 20:00:33,051 - Output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 7 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data bulanan M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com
+Laporan M2 Madiun untuk tanggal 7 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 7 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Data bulanan M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com
+Laporan M2 Magetan untuk tanggal 7 Mei 2025 berhasil dikirim
+Selesai!
+
