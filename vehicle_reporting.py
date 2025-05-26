@@ -546,21 +546,23 @@ def create_html_report(daily_data, weekly_data, monthly_data,
                             <div class="stat-value">{daily_data['summary']['total_units']}</div>
                             <div class="stat-label">Unit Terjual</div>
                         </div>
+                        <!--
                         <div class="stat-box">
                             <div class="stat-value">{format_currency(daily_data['summary']['total_value'])}</div>
                             <div class="stat-label">Total Harga Beli</div>
                         </div>
+                        -->
                     </div>
                     
                     <div class="payment-row">
                         <div class="payment-box">
                             <div class="payment-count">{daily_data['summary']['payment_methods']['tunai']['count']} Unit</div>
-                            <div class="payment-value">Margin: {format_currency(daily_data['summary']['payment_methods']['tunai']['margin'])}</div>
+                            <!--<div class="payment-value">Margin: {format_currency(daily_data['summary']['payment_methods']['tunai']['margin'])}</div>-->
                             <div class="payment-label">💰 Tunai</div>
                         </div>
                         <div class="payment-box">
                             <div class="payment-count">{daily_data['summary']['payment_methods']['kredit']['count']} Unit</div>
-                            <div class="payment-value">Margin: {format_currency(daily_data['summary']['payment_methods']['kredit']['margin'])}</div>
+                            <!--<div class="payment-value">Margin: {format_currency(daily_data['summary']['payment_methods']['kredit']['margin'])}</div>-->
                             <div class="payment-label">💳 Kredit</div>
                         </div>
                     </div>
@@ -598,21 +600,23 @@ def create_html_report(daily_data, weekly_data, monthly_data,
                             <div class="stat-value">{monthly_data['summary']['total_units']}</div>
                             <div class="stat-label">Unit Terjual</div>
                         </div>
+                        <!--
                         <div class="stat-box">
                             <div class="stat-value">{format_currency(monthly_data['summary']['total_value'])}</div>
                             <div class="stat-label">Total Harga Beli</div>
                         </div>
+                        -->
                     </div>
                     
                     <div class="payment-row">
                         <div class="payment-box">
                             <div class="payment-count">{monthly_data['summary']['payment_methods']['tunai']['count']} Unit</div>
-                            <div class="payment-value">Margin: {format_currency(monthly_data['summary']['payment_methods']['tunai']['margin'])}</div>
+                            <!--<div class="payment-value">Margin: {format_currency(monthly_data['summary']['payment_methods']['tunai']['margin'])}</div>-->
                             <div class="payment-label">💰 Tunai</div>
                         </div>
                         <div class="payment-box">
                             <div class="payment-count">{monthly_data['summary']['payment_methods']['kredit']['count']} Unit</div>
-                            <div class="payment-value">Margin: {format_currency(monthly_data['summary']['payment_methods']['kredit']['margin'])}</div>
+                            <!--<div class="payment-value">Margin: {format_currency(monthly_data['summary']['payment_methods']['kredit']['margin'])}</div>-->
                             <div class="payment-label">💳 Kredit</div>
                         </div>
                     </div>
@@ -641,6 +645,7 @@ def create_html_report(daily_data, weekly_data, monthly_data,
             </div>
             
             {f'''
+            <!--
             <div class="card">
                 <div class="card-header margin-section">
                     <h2 class="card-title">💰 Keuntungan Hari Ini</h2>
@@ -744,6 +749,7 @@ def create_html_report(daily_data, weekly_data, monthly_data,
                     </div>
                 </div>
             </div>
+            -->
             ''' if daily_margin and monthly_margin else ''}
             
             <div class="footer">
