@@ -175,7 +175,7 @@ def main():
 
     start_date = sys.argv[1]
     end_date = sys.argv[2]
-    recipients = ["alvusebastian@gmail.com"]
+    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
     
     try:
         # Get SPV performance data for both locations
