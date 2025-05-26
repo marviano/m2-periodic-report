@@ -796,8 +796,8 @@ def process_location_data(db_name, location_name, specific_date=None):
         location_name (str): Name of the location for the report title
         specific_date (date, optional): Specific date for the report. Defaults to None (current date).
     """
-    recipients = ["alvusebastian@gmail.com"]
-    # recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
+    # recipients = ["alvusebastian@gmail.com"]
+    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
     
     try:
         # Use the provided date or today's date
