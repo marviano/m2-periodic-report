@@ -80,9 +80,6 @@ def format_spv_report(spv_data, start_date, end_date):
                 font-weight: bold;
                 color: #e70000;
             }}
-            .city {{
-                color: #666;
-            }}
             .today-change {{
                 color: #34a853;
                 font-weight: bold;
@@ -98,7 +95,6 @@ def format_spv_report(spv_data, start_date, end_date):
             <thead>
                 <tr>
                     <th>SPV</th>
-                    <th>City</th>
                     <th>MTD</th>
                     <th>YTD</th>
                     <th>Today</th>
@@ -107,14 +103,30 @@ def format_spv_report(spv_data, start_date, end_date):
             <tbody>
     """
     
-    # Sort data by city and then by name
-    sorted_data = sorted(spv_data['data'], key=lambda x: (x['city'], x['nama_spv']))
+    # Combine SPVs with same name and sum their DO counts
+    combined_spvs = {}
+    for spv in spv_data['data']:
+        spv_name = spv['nama_spv']
+        if spv_name in combined_spvs:
+            # Sum the DO counts for SPVs with the same name
+            combined_spvs[spv_name]['mtd_do'] += spv['mtd_do']
+            combined_spvs[spv_name]['ytd_do'] += spv['ytd_do']
+            combined_spvs[spv_name]['today_do'] += spv['today_do']
+        else:
+            combined_spvs[spv_name] = {
+                'nama_spv': spv_name,
+                'mtd_do': spv['mtd_do'],
+                'ytd_do': spv['ytd_do'],
+                'today_do': spv['today_do']
+            }
     
-    for spv in sorted_data:
+    # Sort by YTD DO count (highest to lowest) for performance ranking
+    sorted_spvs = sorted(combined_spvs.values(), key=lambda x: x['ytd_do'], reverse=True)
+    
+    for spv in sorted_spvs:
         html += f"""
             <tr>
                 <td class="spv-name">{spv['nama_spv']}</td>
-                <td class="city">{spv['city']}</td>
                 <td>{spv['mtd_do']}</td>
                 <td>{spv['ytd_do']}</td>
                 <td>{spv['today_do']} <span class="today-change">[+{spv['today_do']}]</span></td>
@@ -182,13 +194,7 @@ def main():
         madiun_data = get_spv_performance(start_date, end_date, "honda_mis")
         magetan_data = get_spv_performance(start_date, end_date, "m2_magetan")
         
-        # Add city information to the data
-        for spv in madiun_data['data']:
-            spv['city'] = 'Madiun'
-        for spv in magetan_data['data']:
-            spv['city'] = 'Magetan'
-        
-        # Combine data from both locations
+        # Combine data from both locations (no need to add city info anymore)
         combined_data = {
             'data': madiun_data['data'] + magetan_data['data']
         }
