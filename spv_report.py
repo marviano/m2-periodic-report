@@ -104,20 +104,25 @@ def format_spv_report(spv_data, start_date, end_date):
     """
     
     # Combine SPVs with same name and sum their DO counts
+    # Use more robust name normalization to handle variations
     combined_spvs = {}
     for spv in spv_data['data']:
-        spv_name = spv['nama_spv']
-        if spv_name in combined_spvs:
+        # Normalize SPV name: strip whitespace, convert to title case for consistency
+        original_name = spv['nama_spv']
+        normalized_name = original_name.strip().title() if original_name else "Unknown"
+        
+        # Use normalized name as key but keep original for display if it's the first occurrence
+        if normalized_name in combined_spvs:
             # Sum the DO counts for SPVs with the same name
-            combined_spvs[spv_name]['mtd_do'] += spv['mtd_do']
-            combined_spvs[spv_name]['ytd_do'] += spv['ytd_do']
-            combined_spvs[spv_name]['today_do'] += spv['today_do']
+            combined_spvs[normalized_name]['mtd_do'] += spv['mtd_do'] or 0
+            combined_spvs[normalized_name]['ytd_do'] += spv['ytd_do'] or 0
+            combined_spvs[normalized_name]['today_do'] += spv['today_do'] or 0
         else:
-            combined_spvs[spv_name] = {
-                'nama_spv': spv_name,
-                'mtd_do': spv['mtd_do'],
-                'ytd_do': spv['ytd_do'],
-                'today_do': spv['today_do']
+            combined_spvs[normalized_name] = {
+                'nama_spv': normalized_name,  # Use normalized name for display
+                'mtd_do': spv['mtd_do'] or 0,
+                'ytd_do': spv['ytd_do'] or 0,
+                'today_do': spv['today_do'] or 0
             }
     
     # Sort by YTD DO count (highest to lowest) for performance ranking
@@ -194,7 +199,7 @@ def main():
         madiun_data = get_spv_performance(start_date, end_date, "honda_mis")
         magetan_data = get_spv_performance(start_date, end_date, "m2_magetan")
         
-        # Combine data from both locations (no need to add city info anymore)
+        # Combine data from both locations
         combined_data = {
             'data': madiun_data['data'] + magetan_data['data']
         }

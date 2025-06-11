@@ -73,74 +73,145 @@ def get_margin_summary(start_date, end_date, database_name="honda_mis"):
     conn = connect_to_database(database_name)
     cursor = conn.cursor(dictionary=True)
     
-    # Query to get margin summary for a date range
-    query = """
-    SELECT 
-        COUNT(*) as total_vehicles,
-        SUM(spk.harga_jual) as total_harga_jual,
-        SUM(IFNULL(dor.harga_ppn, 0)) as total_harga_tebus,
-        SUM(
-            spk.harga_jual - (
-                IFNULL(dor.harga_ppn, 0) + 
-                spk.diskon + 
-                spk.nota_kredit + 
-                spk.komisi_makelar +
-                IFNULL(pl.dp_gross, 0) - 
-                IFNULL(pl.subs_ahm, 0) - 
-                IFNULL(pl.main_dealer, 0) - 
-                IFNULL(mb.perk_notice, 0) +
-                (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
-                spk.promo_pusat
-            ) - spk.perk_adm_wil + spk.saving
-        ) AS total_margin,
-        SUM(CASE WHEN (spk.cara_bayar IS NULL OR spk.cara_bayar != 'KREDIT') THEN 1 ELSE 0 END) as tunai_count,
-        SUM(CASE WHEN spk.cara_bayar = 'KREDIT' THEN 1 ELSE 0 END) as kredit_count,
-        SUM(CASE WHEN (spk.cara_bayar IS NULL OR spk.cara_bayar != 'KREDIT') THEN 
-            spk.harga_jual - (
-                IFNULL(dor.harga_ppn, 0) + 
-                spk.diskon + 
-                spk.nota_kredit + 
-                spk.komisi_makelar +
-                IFNULL(pl.dp_gross, 0) - 
-                IFNULL(pl.subs_ahm, 0) - 
-                IFNULL(pl.main_dealer, 0) - 
-                IFNULL(mb.perk_notice, 0) +
-                (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
-                spk.promo_pusat
-            ) - spk.perk_adm_wil + spk.saving
-        ELSE 0 END) AS tunai_margin,
-        SUM(CASE WHEN spk.cara_bayar = 'KREDIT' THEN 
-            spk.harga_jual - (
-                IFNULL(dor.harga_ppn, 0) + 
-                spk.diskon + 
-                spk.nota_kredit + 
-                spk.komisi_makelar +
-                IFNULL(pl.dp_gross, 0) - 
-                IFNULL(pl.subs_ahm, 0) - 
-                IFNULL(pl.main_dealer, 0) - 
-                IFNULL(mb.perk_notice, 0) +
-                (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
-                spk.promo_pusat
-            ) - spk.perk_adm_wil + spk.saving
-        ELSE 0 END) AS kredit_margin
-    FROM tbl_spk AS spk 
-    INNER JOIN tbl_bast AS bast 
-        ON bast.kode_spk = spk.kode_spk 
-    INNER JOIN vi_data_induk_barang_motor AS mb 
-        ON spk.kendaraan_warna_id = mb.data_id 
-    INNER JOIN tbl_data_induk_pelanggan AS mp 
-        ON spk.kode_pelanggan_faktur = mp.pelanggan_id 
-    LEFT JOIN tbl_sub_barang_masuk AS sbm 
-        ON bast.no_rangka = sbm.no_rangka
-    LEFT JOIN tbl_barang_masuk AS bm 
-        ON sbm.kode_bm = bm.kode_bm
-    LEFT JOIN vi_do_lengkap AS dor 
-        ON bm.no_do = dor.no_do 
-        AND mb.kode_warna_lengkap = dor.kode_barang_lengkap
-    LEFT JOIN tbl_penagihan_leasing pl 
-        ON pl.kode_bast = bast.kode_bast
-    WHERE DATE(bast.tgl_bast) BETWEEN %s AND %s
-    """
+    # Choose the appropriate query based on the database
+    if database_name == "honda_mis":
+        # Original query for honda_mis
+        query = """
+        SELECT 
+            COUNT(*) as total_vehicles,
+            SUM(spk.harga_jual) as total_harga_jual,
+            SUM(IFNULL(dor.harga_ppn, 0)) as total_harga_tebus,
+            SUM(
+                spk.harga_jual - (
+                    IFNULL(dor.harga_ppn, 0) + 
+                    spk.diskon + 
+                    spk.nota_kredit + 
+                    spk.komisi_makelar +
+                    IFNULL(pl.dp_gross, 0) - 
+                    IFNULL(pl.subs_ahm, 0) - 
+                    IFNULL(pl.main_dealer, 0) - 
+                    IFNULL(mb.perk_notice, 0) +
+                    (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
+                    spk.promo_pusat
+                ) - spk.perk_adm_wil + spk.saving
+            ) AS total_margin,
+            SUM(CASE WHEN (spk.cara_bayar IS NULL OR spk.cara_bayar != 'KREDIT') THEN 1 ELSE 0 END) as tunai_count,
+            SUM(CASE WHEN spk.cara_bayar = 'KREDIT' THEN 1 ELSE 0 END) as kredit_count,
+            SUM(CASE WHEN (spk.cara_bayar IS NULL OR spk.cara_bayar != 'KREDIT') THEN 
+                spk.harga_jual - (
+                    IFNULL(dor.harga_ppn, 0) + 
+                    spk.diskon + 
+                    spk.nota_kredit + 
+                    spk.komisi_makelar +
+                    IFNULL(pl.dp_gross, 0) - 
+                    IFNULL(pl.subs_ahm, 0) - 
+                    IFNULL(pl.main_dealer, 0) - 
+                    IFNULL(mb.perk_notice, 0) +
+                    (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
+                    spk.promo_pusat
+                ) - spk.perk_adm_wil + spk.saving
+            ELSE 0 END) AS tunai_margin,
+            SUM(CASE WHEN spk.cara_bayar = 'KREDIT' THEN 
+                spk.harga_jual - (
+                    IFNULL(dor.harga_ppn, 0) + 
+                    spk.diskon + 
+                    spk.nota_kredit + 
+                    spk.komisi_makelar +
+                    IFNULL(pl.dp_gross, 0) - 
+                    IFNULL(pl.subs_ahm, 0) - 
+                    IFNULL(pl.main_dealer, 0) - 
+                    IFNULL(mb.perk_notice, 0) +
+                    (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
+                    spk.promo_pusat
+                ) - spk.perk_adm_wil + spk.saving
+            ELSE 0 END) AS kredit_margin
+        FROM tbl_spk AS spk 
+        INNER JOIN tbl_bast AS bast 
+            ON bast.kode_spk = spk.kode_spk 
+        INNER JOIN vi_data_induk_barang_motor AS mb 
+            ON spk.kendaraan_warna_id = mb.data_id 
+        INNER JOIN tbl_data_induk_pelanggan AS mp 
+            ON spk.kode_pelanggan_faktur = mp.pelanggan_id 
+        LEFT JOIN tbl_sub_barang_masuk AS sbm 
+            ON bast.no_rangka = sbm.no_rangka
+        LEFT JOIN tbl_barang_masuk AS bm 
+            ON sbm.kode_bm = bm.kode_bm
+        LEFT JOIN vi_do_lengkap AS dor 
+            ON bm.no_do = dor.no_do 
+            AND mb.kode_warna_lengkap = dor.kode_barang_lengkap
+        LEFT JOIN tbl_penagihan_leasing pl 
+            ON pl.kode_bast = bast.kode_bast
+        WHERE DATE(bast.tgl_bast) BETWEEN %s AND %s
+        """
+    else:
+        # Modified query for m2_magetan and any other database without subs_ahm, main_dealer, and perk_adm_wil
+        query = """
+        SELECT 
+            COUNT(*) as total_vehicles,
+            SUM(spk.harga_jual) as total_harga_jual,
+            SUM(IFNULL(dor.harga_ppn, 0)) as total_harga_tebus,
+            SUM(
+                spk.harga_jual - (
+                    IFNULL(dor.harga_ppn, 0) + 
+                    spk.diskon + 
+                    spk.nota_kredit + 
+                    spk.komisi_makelar +
+                    IFNULL(pl.dp_gross, 0) - 
+                    0 - /* Replace pl.subs_ahm with 0 */
+                    0 - /* Replace pl.main_dealer with 0 */
+                    IFNULL(mb.perk_notice, 0) +
+                    (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
+                    spk.promo_pusat
+                ) - 0 + spk.saving /* Replace spk.perk_adm_wil with 0 */
+            ) AS total_margin,
+            SUM(CASE WHEN (spk.cara_bayar IS NULL OR spk.cara_bayar != 'KREDIT') THEN 1 ELSE 0 END) as tunai_count,
+            SUM(CASE WHEN spk.cara_bayar = 'KREDIT' THEN 1 ELSE 0 END) as kredit_count,
+            SUM(CASE WHEN (spk.cara_bayar IS NULL OR spk.cara_bayar != 'KREDIT') THEN 
+                spk.harga_jual - (
+                    IFNULL(dor.harga_ppn, 0) + 
+                    spk.diskon + 
+                    spk.nota_kredit + 
+                    spk.komisi_makelar +
+                    IFNULL(pl.dp_gross, 0) - 
+                    0 - /* Replace pl.subs_ahm with 0 */
+                    0 - /* Replace pl.main_dealer with 0 */
+                    IFNULL(mb.perk_notice, 0) +
+                    (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
+                    spk.promo_pusat
+                ) - 0 + spk.saving /* Replace spk.perk_adm_wil with 0 */
+            ELSE 0 END) AS tunai_margin,
+            SUM(CASE WHEN spk.cara_bayar = 'KREDIT' THEN 
+                spk.harga_jual - (
+                    IFNULL(dor.harga_ppn, 0) + 
+                    spk.diskon + 
+                    spk.nota_kredit + 
+                    spk.komisi_makelar +
+                    IFNULL(pl.dp_gross, 0) - 
+                    0 - /* Replace pl.subs_ahm with 0 */
+                    0 - /* Replace pl.main_dealer with 0 */
+                    IFNULL(mb.perk_notice, 0) +
+                    (spk.um_t_leasing - spk.uang_muka + spk.komisi_makelar_leasing) - 
+                    spk.promo_pusat
+                ) - 0 + spk.saving /* Replace spk.perk_adm_wil with 0 */
+            ELSE 0 END) AS kredit_margin
+        FROM tbl_spk AS spk 
+        INNER JOIN tbl_bast AS bast 
+            ON bast.kode_spk = spk.kode_spk 
+        INNER JOIN vi_data_induk_barang_motor AS mb 
+            ON spk.kendaraan_warna_id = mb.data_id 
+        INNER JOIN tbl_data_induk_pelanggan AS mp 
+            ON spk.kode_pelanggan_faktur = mp.pelanggan_id 
+        LEFT JOIN tbl_sub_barang_masuk AS sbm 
+            ON bast.no_rangka = sbm.no_rangka
+        LEFT JOIN tbl_barang_masuk AS bm 
+            ON sbm.kode_bm = bm.kode_bm
+        LEFT JOIN vi_do_lengkap AS dor 
+            ON bm.no_do = dor.no_do 
+            AND mb.kode_warna_lengkap = dor.kode_barang_lengkap
+        LEFT JOIN tbl_penagihan_leasing pl 
+            ON pl.kode_bast = bast.kode_bast
+        WHERE DATE(bast.tgl_bast) BETWEEN %s AND %s
+        """
     
     try:
         cursor.execute(query, (start_date, end_date))
@@ -790,8 +861,8 @@ def process_location_data(db_name, location_name, specific_date=None):
         location_name (str): Name of the location for the report title
         specific_date (date, optional): Specific date for the report. Defaults to None (current date).
     """
-    recipients = ["alvusebastian@gmail.com"]
-    # recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
+    # recipients = ["alvusebastian@gmail.com"]
+    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
     
     try:
         # Use the provided date or today's date

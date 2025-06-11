@@ -13,18 +13,16 @@ if %ERRORLEVEL% neq 0 (
     exit /b 1
 )
 
-REM Get current date for YTD report
-for /f "tokens=2-4 delims=/ " %%a in ('date /t') do (
-    set mm=%%a
-    set dd=%%b
-    set yy=%%c
-)
+REM Use PowerShell to get properly formatted dates
+for /f %%i in ('powershell -Command "Get-Date -Format 'yyyy-MM-dd'"') do set end_date=%%i
+for /f %%i in ('powershell -Command "Get-Date -Format 'yyyy'"') do set current_year=%%i
 
 REM Set start date to January 1st of current year
-set start_date=%yy%-01-01
+set start_date=%current_year%-01-01
 
-REM Set end date to today
-set end_date=%yy%-%mm%-%dd%
+echo Start date: %start_date%
+echo End date: %end_date%
+echo.
 
 REM Run the vehicle reporting script
 echo Running vehicle report...
