@@ -38,6 +38,7 @@ def format_spv_report(spv_data, start_date, end_date):
             body {{
                 font-family: Arial, sans-serif;
                 margin: 10px;
+                background-color: #f8f9fa;
             }}
             .header {{
                 text-align: center;
@@ -58,31 +59,108 @@ def format_spv_report(spv_data, start_date, end_date):
                 width: 100%;
                 border-collapse: collapse;
                 margin: 0 auto;
+                background-color: white;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 8px;
+                overflow: hidden;
             }}
             th {{
                 background-color: #e70000;
                 color: white;
-                padding: 8px;
+                padding: 10px 8px;
                 text-align: center;
-                font-size: 13px;
+                font-size: 12px;
+                font-weight: bold;
+                border-right: 1px solid #c60000;
             }}
             td {{
-                padding: 8px;
+                padding: 8px 6px;
                 text-align: center;
-                border-bottom: 1px solid #ddd;
-                font-size: 13px;
+                border-bottom: 1px solid #e9ecef;
+                border-right: 1px solid #e9ecef;
+                font-size: 12px;
             }}
-            tr:nth-child(even) {{
-                background-color: #f9f9f9;
+            /* Alternating row colors */
+            tbody tr:nth-child(odd) {{
+                background-color: #ffffff;
+            }}
+            tbody tr:nth-child(even) {{
+                background-color: #f8f9fa;
+            }}
+            tbody tr:hover {{
+                background-color: #e3f2fd !important;
+                transition: background-color 0.3s ease;
             }}
             .spv-name {{
                 text-align: left;
                 font-weight: bold;
                 color: #e70000;
+                min-width: 150px;
+                border-right: 3px solid #e70000 !important;
+                background-color: #fff5f5 !important;
+            }}
+            /* Column group background colors - ODD ROWS (Light colors) */
+            tbody tr:nth-child(odd) .mtd-group {{
+                background-color: #e8f5e8 !important; /* Light green */
+            }}
+            tbody tr:nth-child(odd) .ytd-group {{
+                background-color: #e3f2fd !important; /* Light blue */
+            }}
+            tbody tr:nth-child(odd) .today-group {{
+                background-color: #fff8e1 !important; /* Light yellow */
+            }}
+            tbody tr:nth-child(odd) .spv-name {{
+                background-color: #ffebee !important; /* Light red */
+            }}
+            
+            /* Column group background colors - EVEN ROWS (Darker colors) */
+            tbody tr:nth-child(even) .mtd-group {{
+                background-color: #c8e6c9 !important; /* Darker green */
+            }}
+            tbody tr:nth-child(even) .ytd-group {{
+                background-color: #bbdefb !important; /* Darker blue */
+            }}
+            tbody tr:nth-child(even) .today-group {{
+                background-color: #fff3c4 !important; /* Darker yellow */
+            }}
+            tbody tr:nth-child(even) .spv-name {{
+                background-color: #ffcdd2 !important; /* Darker red */
             }}
             .today-change {{
-                color: #34a853;
+                color: #2e7d32;
                 font-weight: bold;
+            }}
+            /* Dividers between column groups */
+            .today-divider {{
+                border-right: 3px solid #333 !important;
+            }}
+            .mtd-divider {{
+                border-right: 3px solid #333 !important;
+            }}
+            .ytd-divider {{
+                border-right: 3px solid #333 !important;
+            }}
+            .header-today {{
+                border-right: 3px solid #c60000 !important;
+                background-color: #c60000 !important;
+            }}
+            .header-mtd {{
+                border-right: 3px solid #c60000 !important;
+                background-color: #c60000 !important;
+            }}
+            .header-ytd {{
+                border-right: 3px solid #c60000 !important;
+                background-color: #c60000 !important;
+            }}
+            /* Header group colors */
+            .header-mtd-sub {{
+                background-color: #2e7d32 !important;
+            }}
+            .header-ytd-sub {{
+                background-color: #1565c0 !important;
+            }}
+            .header-today-sub {{
+                background-color: #f57c00 !important;
             }}
         </style>
     </head>
@@ -94,10 +172,21 @@ def format_spv_report(spv_data, start_date, end_date):
         <table>
             <thead>
                 <tr>
-                    <th>SPV</th>
-                    <th>MTD</th>
-                    <th>YTD</th>
-                    <th>Today</th>
+                    <th rowspan="2" class="spv-name">SPV</th>
+                    <th colspan="3" class="header-today">Today</th>
+                    <th colspan="3" class="header-mtd">MTD</th>
+                    <th colspan="3" class="header-ytd">YTD</th>
+                </tr>
+                <tr>
+                    <th class="header-today-sub">Madiun</th>
+                    <th class="header-today-sub">Magetan</th>
+                    <th class="header-today-sub today-divider">Total</th>
+                    <th class="header-mtd-sub">Madiun</th>
+                    <th class="header-mtd-sub">Magetan</th>
+                    <th class="header-mtd-sub mtd-divider">Total</th>
+                    <th class="header-ytd-sub">Madiun</th>
+                    <th class="header-ytd-sub">Magetan</th>
+                    <th class="header-ytd-sub">Total</th>
                 </tr>
             </thead>
             <tbody>
@@ -111,30 +200,69 @@ def format_spv_report(spv_data, start_date, end_date):
         original_name = spv['nama_spv']
         normalized_name = original_name.strip().title() if original_name else "Unknown"
         
+        # Hardcode fix for Tonny/Toni Saputra (same person)
+        if normalized_name in ["Tonny Saputra", "Toni Saputra"]:
+            normalized_name = "Tonny Saputra"
+        
+        # Determine which database this record came from
+        database_source = spv.get('database_source', 'unknown')
+        
         # Use normalized name as key but keep original for display if it's the first occurrence
         if normalized_name in combined_spvs:
             # Sum the DO counts for SPVs with the same name
-            combined_spvs[normalized_name]['mtd_do'] += spv['mtd_do'] or 0
-            combined_spvs[normalized_name]['ytd_do'] += spv['ytd_do'] or 0
-            combined_spvs[normalized_name]['today_do'] += spv['today_do'] or 0
+            if database_source == 'honda_mis':
+                combined_spvs[normalized_name]['mtd_do_madiun'] += spv['mtd_do'] or 0
+                combined_spvs[normalized_name]['ytd_do_madiun'] += spv['ytd_do'] or 0
+                combined_spvs[normalized_name]['today_do_madiun'] += spv['today_do'] or 0
+            elif database_source == 'm2_magetan':
+                combined_spvs[normalized_name]['mtd_do_magetan'] += spv['mtd_do'] or 0
+                combined_spvs[normalized_name]['ytd_do_magetan'] += spv['ytd_do'] or 0
+                combined_spvs[normalized_name]['today_do_magetan'] += spv['today_do'] or 0
         else:
-            combined_spvs[normalized_name] = {
-                'nama_spv': normalized_name,  # Use normalized name for display
-                'mtd_do': spv['mtd_do'] or 0,
-                'ytd_do': spv['ytd_do'] or 0,
-                'today_do': spv['today_do'] or 0
-            }
+            # Initialize with separate counters for each database
+            if database_source == 'honda_mis':
+                combined_spvs[normalized_name] = {
+                    'nama_spv': normalized_name,
+                    'mtd_do_madiun': spv['mtd_do'] or 0,
+                    'mtd_do_magetan': 0,
+                    'ytd_do_madiun': spv['ytd_do'] or 0,
+                    'ytd_do_magetan': 0,
+                    'today_do_madiun': spv['today_do'] or 0,
+                    'today_do_magetan': 0
+                }
+            elif database_source == 'm2_magetan':
+                combined_spvs[normalized_name] = {
+                    'nama_spv': normalized_name,
+                    'mtd_do_madiun': 0,
+                    'mtd_do_magetan': spv['mtd_do'] or 0,
+                    'ytd_do_madiun': 0,
+                    'ytd_do_magetan': spv['ytd_do'] or 0,
+                    'today_do_madiun': 0,
+                    'today_do_magetan': spv['today_do'] or 0
+                }
     
-    # Sort by YTD DO count (highest to lowest) for performance ranking
-    sorted_spvs = sorted(combined_spvs.values(), key=lambda x: x['ytd_do'], reverse=True)
+    # Calculate totals for each SPV
+    for spv_name, spv_data in combined_spvs.items():
+        spv_data['mtd_do_total'] = spv_data['mtd_do_madiun'] + spv_data['mtd_do_magetan']
+        spv_data['ytd_do_total'] = spv_data['ytd_do_madiun'] + spv_data['ytd_do_magetan']
+        spv_data['today_do_total'] = spv_data['today_do_madiun'] + spv_data['today_do_magetan']
+    
+    # Sort by YTD total DO count (highest to lowest) for performance ranking
+    sorted_spvs = sorted(combined_spvs.values(), key=lambda x: x['ytd_do_total'], reverse=True)
     
     for spv in sorted_spvs:
         html += f"""
             <tr>
                 <td class="spv-name">{spv['nama_spv']}</td>
-                <td>{spv['mtd_do']}</td>
-                <td>{spv['ytd_do']}</td>
-                <td>{spv['today_do']} <span class="today-change">[+{spv['today_do']}]</span></td>
+                <td class="today-group">{spv['today_do_madiun']}</td>
+                <td class="today-group">{spv['today_do_magetan']}</td>
+                <td class="today-group today-divider">{spv['today_do_total']}</td>
+                <td class="mtd-group">{spv['mtd_do_madiun']}</td>
+                <td class="mtd-group">{spv['mtd_do_magetan']}</td>
+                <td class="mtd-group mtd-divider">{spv['mtd_do_total']}</td>
+                <td class="ytd-group">{spv['ytd_do_madiun']}</td>
+                <td class="ytd-group">{spv['ytd_do_magetan']}</td>
+                <td class="ytd-group">{spv['ytd_do_total']}</td>
             </tr>
         """
     
@@ -185,19 +313,58 @@ This is an automated report. Please view the HTML version for complete details.
         return False
 
 def main():
-    if len(sys.argv) != 3:
-        print("Usage: python spv_report.py <start_date> <end_date>")
-        print("Example: python spv_report.py 2024-01-01 2024-03-20")
+    if len(sys.argv) == 2:
+        # Single date argument in DDMMYYYY format (like vehicle_reporting.py)
+        date_arg = sys.argv[1]
+        try:
+            # Parse date argument
+            day = int(date_arg[0:2])
+            month = int(date_arg[2:4])
+            year = int(date_arg[4:8])
+            target_date = datetime(year, month, day).date()
+            
+            # Calculate date ranges
+            start_date = target_date.replace(month=1, day=1).strftime('%Y-%m-%d')  # YTD start
+            end_date = target_date.strftime('%Y-%m-%d')  # Target date
+            
+            print(f"Generating SPV report for {day} {['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'][month-1]} {year}")
+            print(f"YTD Period: {start_date} to {end_date}")
+            
+        except (ValueError, IndexError):
+            print("Error: Invalid date format.")
+            print("Usage: python spv_report.py <DDMMYYYY>")
+            print("Example: python spv_report.py 05062025")
+            sys.exit(1)
+            
+    elif len(sys.argv) == 3:
+        # Original format with start_date and end_date
+        start_date = sys.argv[1]
+        end_date = sys.argv[2]
+        print(f"Custom date range: {start_date} to {end_date}")
+        
+    else:
+        print("Usage:")
+        print("  python spv_report.py <DDMMYYYY>")
+        print("  python spv_report.py <start_date> <end_date>")
+        print("")
+        print("Examples:")
+        print("  python spv_report.py 05062025           # YTD report for June 5, 2025")
+        print("  python spv_report.py 2025-01-01 2025-06-05  # Custom date range")
         sys.exit(1)
 
-    start_date = sys.argv[1]
-    end_date = sys.argv[2]
-    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
+    recipients = ["alvusebastian@gmail.com"]
     
     try:
         # Get SPV performance data for both locations
         madiun_data = get_spv_performance(start_date, end_date, "honda_mis")
         magetan_data = get_spv_performance(start_date, end_date, "m2_magetan")
+        
+        # Add database source information to each record
+        for record in madiun_data['data']:
+            record['database_source'] = 'honda_mis'
+        
+        for record in magetan_data['data']:
+            record['database_source'] = 'm2_magetan'
         
         # Combine data from both locations
         combined_data = {
