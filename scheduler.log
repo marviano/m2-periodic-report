@@ -2136,3 +2136,2172 @@ Selesai!
 2025-05-26 16:01:16,467 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
 SPV DO report sent successfully!
 
+2025-05-26 18:09:01,239 - Scheduler started with 15-minute grace periods
+2025-05-26 18:09:01,239 - Running report within grace period: 18:00-18:15
+2025-05-26 18:09:01,239 - Running reports at 2025-05-26 18:09:01
+2025-05-26 18:09:01,239 - Running vehicle report...
+2025-05-26 18:09:31,135 - Running SPV performance report...
+2025-05-26 18:09:37,449 - Vehicle report completed with return code: 0
+2025-05-26 18:09:37,449 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 26 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 26 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 26 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 26 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-26 18:09:37,449 - SPV report completed with return code: 0
+2025-05-26 18:09:37,449 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-26 20:00:37,497 - Running report within grace period: 20:00-20:15
+2025-05-26 20:00:37,497 - Running reports at 2025-05-26 20:00:37
+2025-05-26 20:00:37,497 - Running vehicle report...
+2025-05-26 20:01:12,724 - Running SPV performance report...
+2025-05-26 20:01:20,049 - Vehicle report completed with return code: 0
+2025-05-26 20:01:20,049 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 26 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 26 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 26 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 26 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-26 20:01:20,049 - SPV report completed with return code: 0
+2025-05-26 20:01:20,049 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-27 12:00:21,647 - Running report within grace period: 12:00-12:15
+2025-05-27 12:00:21,647 - Running reports at 2025-05-27 12:00:21
+2025-05-27 12:00:21,647 - Running vehicle report...
+2025-05-27 12:00:53,026 - Running SPV performance report...
+2025-05-27 12:00:59,063 - Vehicle report completed with return code: 0
+2025-05-27 12:00:59,063 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 27 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 27 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 27 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 27 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-27 12:00:59,063 - SPV report completed with return code: 0
+2025-05-27 12:00:59,063 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-27 14:00:59,113 - Running report within grace period: 14:00-14:15
+2025-05-27 14:00:59,113 - Running reports at 2025-05-27 14:00:59
+2025-05-27 14:00:59,113 - Running vehicle report...
+2025-05-27 14:01:28,806 - Running SPV performance report...
+2025-05-27 14:01:34,822 - Vehicle report completed with return code: 0
+2025-05-27 14:01:34,822 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 27 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 27 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 27 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 27 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-27 14:01:34,822 - SPV report completed with return code: 0
+2025-05-27 14:01:34,822 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-27 16:00:34,864 - Running report within grace period: 16:00-16:15
+2025-05-27 16:00:34,864 - Running reports at 2025-05-27 16:00:34
+2025-05-27 16:00:34,864 - Running vehicle report...
+2025-05-27 16:01:29,463 - Running SPV performance report...
+2025-05-27 16:01:35,792 - Vehicle report completed with return code: 0
+2025-05-27 16:01:35,792 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 27 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 27 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 27 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 27 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-27 16:01:35,792 - SPV report completed with return code: 0
+2025-05-27 16:01:35,792 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-27 18:00:35,840 - Running report within grace period: 18:00-18:15
+2025-05-27 18:00:35,840 - Running reports at 2025-05-27 18:00:35
+2025-05-27 18:00:35,840 - Running vehicle report...
+2025-05-27 18:01:04,418 - Running SPV performance report...
+2025-05-27 18:01:10,915 - Vehicle report completed with return code: 0
+2025-05-27 18:01:10,915 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 27 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 27 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 27 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 27 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-27 18:01:10,915 - SPV report completed with return code: 0
+2025-05-27 18:01:10,915 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-27 20:00:10,969 - Running report within grace period: 20:00-20:15
+2025-05-27 20:00:10,969 - Running reports at 2025-05-27 20:00:10
+2025-05-27 20:00:10,969 - Running vehicle report...
+2025-05-27 20:00:46,648 - Running SPV performance report...
+2025-05-27 20:00:53,186 - Vehicle report completed with return code: 0
+2025-05-27 20:00:53,186 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 27 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 27 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 27 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 27 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-27 20:00:53,186 - SPV report completed with return code: 0
+2025-05-27 20:00:53,186 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-28 12:00:54,772 - Running report within grace period: 12:00-12:15
+2025-05-28 12:00:54,772 - Running reports at 2025-05-28 12:00:54
+2025-05-28 12:00:54,772 - Running vehicle report...
+2025-05-28 12:01:26,271 - Running SPV performance report...
+2025-05-28 12:01:32,977 - Vehicle report completed with return code: 0
+2025-05-28 12:01:32,977 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 28 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 28 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 28 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 28 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-28 12:01:32,977 - SPV report completed with return code: 0
+2025-05-28 12:01:32,977 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-28 14:00:33,023 - Running report within grace period: 14:00-14:15
+2025-05-28 14:00:33,023 - Running reports at 2025-05-28 14:00:33
+2025-05-28 14:00:33,023 - Running vehicle report...
+2025-05-28 14:01:04,042 - Running SPV performance report...
+2025-05-28 14:01:10,590 - Vehicle report completed with return code: 0
+2025-05-28 14:01:10,590 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 28 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 28 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 28 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 28 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-28 14:01:10,590 - SPV report completed with return code: 0
+2025-05-28 14:01:10,590 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-28 16:00:10,642 - Running report within grace period: 16:00-16:15
+2025-05-28 16:00:10,642 - Running reports at 2025-05-28 16:00:10
+2025-05-28 16:00:10,642 - Running vehicle report...
+2025-05-28 16:00:40,674 - Running SPV performance report...
+2025-05-28 16:00:47,068 - Vehicle report completed with return code: 0
+2025-05-28 16:00:47,068 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 28 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 28 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 28 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 28 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-28 16:00:47,068 - SPV report completed with return code: 0
+2025-05-28 16:00:47,068 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-28 18:00:47,114 - Running report within grace period: 18:00-18:15
+2025-05-28 18:00:47,114 - Running reports at 2025-05-28 18:00:47
+2025-05-28 18:00:47,114 - Running vehicle report...
+2025-05-28 18:01:15,860 - Running SPV performance report...
+2025-05-28 18:01:22,480 - Vehicle report completed with return code: 0
+2025-05-28 18:01:22,480 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 28 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 28 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 28 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 28 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-28 18:01:22,480 - SPV report completed with return code: 0
+2025-05-28 18:01:22,480 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-28 20:00:22,531 - Running report within grace period: 20:00-20:15
+2025-05-28 20:00:22,531 - Running reports at 2025-05-28 20:00:22
+2025-05-28 20:00:22,531 - Running vehicle report...
+2025-05-28 20:00:55,337 - Running SPV performance report...
+2025-05-28 20:01:01,868 - Vehicle report completed with return code: 0
+2025-05-28 20:01:01,868 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 28 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 28 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 28 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 28 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-28 20:01:01,868 - SPV report completed with return code: 0
+2025-05-28 20:01:01,868 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-29 12:00:03,446 - Running report within grace period: 12:00-12:15
+2025-05-29 12:00:03,446 - Running reports at 2025-05-29 12:00:03
+2025-05-29 12:00:03,446 - Running vehicle report...
+2025-05-29 12:00:49,295 - Running SPV performance report...
+2025-05-29 12:00:55,612 - Vehicle report completed with return code: 0
+2025-05-29 12:00:55,612 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 29 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 29 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 29 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 29 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-29 12:00:55,612 - SPV report completed with return code: 0
+2025-05-29 12:00:55,612 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-29 14:00:55,659 - Running report within grace period: 14:00-14:15
+2025-05-29 14:00:55,659 - Running reports at 2025-05-29 14:00:55
+2025-05-29 14:00:55,659 - Running vehicle report...
+2025-05-29 14:01:32,887 - Running SPV performance report...
+2025-05-29 14:01:39,204 - Vehicle report completed with return code: 0
+2025-05-29 14:01:39,204 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 29 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 29 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 29 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 29 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-29 14:01:39,204 - SPV report completed with return code: 0
+2025-05-29 14:01:39,204 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-29 16:00:39,249 - Running report within grace period: 16:00-16:15
+2025-05-29 16:00:39,249 - Running reports at 2025-05-29 16:00:39
+2025-05-29 16:00:39,249 - Running vehicle report...
+2025-05-29 16:01:06,725 - Running SPV performance report...
+2025-05-29 16:01:12,956 - Vehicle report completed with return code: 0
+2025-05-29 16:01:12,956 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 29 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 29 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 29 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 29 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-29 16:01:12,956 - SPV report completed with return code: 0
+2025-05-29 16:01:12,956 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-29 18:00:13,001 - Running report within grace period: 18:00-18:15
+2025-05-29 18:00:13,001 - Running reports at 2025-05-29 18:00:13
+2025-05-29 18:00:13,001 - Running vehicle report...
+2025-05-29 18:00:43,794 - Running SPV performance report...
+2025-05-29 18:00:50,140 - Vehicle report completed with return code: 0
+2025-05-29 18:00:50,140 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 29 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 29 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 29 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 29 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-29 18:00:50,140 - SPV report completed with return code: 0
+2025-05-29 18:00:50,140 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-29 20:00:50,186 - Running report within grace period: 20:00-20:15
+2025-05-29 20:00:50,186 - Running reports at 2025-05-29 20:00:50
+2025-05-29 20:00:50,186 - Running vehicle report...
+2025-05-29 20:01:20,072 - Running SPV performance report...
+2025-05-29 20:01:26,674 - Vehicle report completed with return code: 0
+2025-05-29 20:01:26,674 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 29 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 29 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 29 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 29 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-29 20:01:26,674 - SPV report completed with return code: 0
+2025-05-29 20:01:26,674 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-30 12:00:28,253 - Running report within grace period: 12:00-12:15
+2025-05-30 12:00:28,253 - Running reports at 2025-05-30 12:00:28
+2025-05-30 12:00:28,253 - Running vehicle report...
+2025-05-30 12:00:56,499 - Running SPV performance report...
+2025-05-30 12:01:02,472 - Vehicle report completed with return code: 0
+2025-05-30 12:01:02,472 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 30 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 30 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 30 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 30 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-30 12:01:02,472 - SPV report completed with return code: 0
+2025-05-30 12:01:02,472 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-30 14:00:02,524 - Running report within grace period: 14:00-14:15
+2025-05-30 14:00:02,524 - Running reports at 2025-05-30 14:00:02
+2025-05-30 14:00:02,524 - Running vehicle report...
+2025-05-30 14:00:35,651 - Running SPV performance report...
+2025-05-30 14:00:42,063 - Vehicle report completed with return code: 0
+2025-05-30 14:00:42,063 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 30 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 30 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 30 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 30 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-30 14:00:42,063 - SPV report completed with return code: 0
+2025-05-30 14:00:42,063 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-30 16:00:42,108 - Running report within grace period: 16:00-16:15
+2025-05-30 16:00:42,108 - Running reports at 2025-05-30 16:00:42
+2025-05-30 16:00:42,108 - Running vehicle report...
+2025-05-30 16:01:13,329 - Running SPV performance report...
+2025-05-30 16:01:19,619 - Vehicle report completed with return code: 0
+2025-05-30 16:01:19,619 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 30 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 30 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 30 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 30 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-30 16:01:19,619 - SPV report completed with return code: 0
+2025-05-30 16:01:19,619 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-30 18:00:19,668 - Running report within grace period: 18:00-18:15
+2025-05-30 18:00:19,668 - Running reports at 2025-05-30 18:00:19
+2025-05-30 18:00:19,668 - Running vehicle report...
+2025-05-30 18:00:49,131 - Running SPV performance report...
+2025-05-30 18:00:55,257 - Vehicle report completed with return code: 0
+2025-05-30 18:00:55,257 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 30 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 30 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 30 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 30 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-30 18:00:55,257 - SPV report completed with return code: 0
+2025-05-30 18:00:55,257 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-30 20:00:55,301 - Running report within grace period: 20:00-20:15
+2025-05-30 20:00:55,301 - Running reports at 2025-05-30 20:00:55
+2025-05-30 20:00:55,301 - Running vehicle report...
+2025-05-30 20:01:27,012 - Running SPV performance report...
+2025-05-30 20:01:34,659 - Vehicle report completed with return code: 0
+2025-05-30 20:01:34,659 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 30 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 30 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 30 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 30 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-30 20:01:34,659 - SPV report completed with return code: 0
+2025-05-30 20:01:34,659 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-31 12:00:36,247 - Running report within grace period: 12:00-12:15
+2025-05-31 12:00:36,247 - Running reports at 2025-05-31 12:00:36
+2025-05-31 12:00:36,247 - Running vehicle report...
+2025-05-31 12:01:06,299 - Running SPV performance report...
+2025-05-31 12:01:12,421 - Vehicle report completed with return code: 0
+2025-05-31 12:01:12,421 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 31 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 31 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 31 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 31 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-31 12:01:12,421 - SPV report completed with return code: 0
+2025-05-31 12:01:12,421 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-31 14:00:12,472 - Running report within grace period: 14:00-14:15
+2025-05-31 14:00:12,472 - Running reports at 2025-05-31 14:00:12
+2025-05-31 14:00:12,472 - Running vehicle report...
+2025-05-31 14:00:42,306 - Running SPV performance report...
+2025-05-31 14:00:49,070 - Vehicle report completed with return code: 0
+2025-05-31 14:00:49,070 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 31 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 31 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 31 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 31 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-31 14:00:49,085 - SPV report completed with return code: 0
+2025-05-31 14:00:49,085 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-31 16:00:49,132 - Running report within grace period: 16:00-16:15
+2025-05-31 16:00:49,132 - Running reports at 2025-05-31 16:00:49
+2025-05-31 16:00:49,132 - Running vehicle report...
+2025-05-31 16:01:40,030 - Running SPV performance report...
+2025-05-31 16:01:46,062 - Vehicle report completed with return code: 0
+2025-05-31 16:01:46,062 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 31 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 31 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 31 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 31 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-31 16:01:46,062 - SPV report completed with return code: 0
+2025-05-31 16:01:46,062 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-31 18:00:46,121 - Running report within grace period: 18:00-18:15
+2025-05-31 18:00:46,121 - Running reports at 2025-05-31 18:00:46
+2025-05-31 18:00:46,121 - Running vehicle report...
+2025-05-31 18:01:19,508 - Running SPV performance report...
+2025-05-31 18:01:25,794 - Vehicle report completed with return code: 0
+2025-05-31 18:01:25,794 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 31 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 31 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 31 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 31 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-31 18:01:25,795 - SPV report completed with return code: 0
+2025-05-31 18:01:25,795 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-05-31 20:00:25,836 - Running report within grace period: 20:00-20:15
+2025-05-31 20:00:25,836 - Running reports at 2025-05-31 20:00:25
+2025-05-31 20:00:25,836 - Running vehicle report...
+2025-05-31 20:00:57,175 - Running SPV performance report...
+2025-05-31 20:01:03,588 - Vehicle report completed with return code: 0
+2025-05-31 20:01:03,589 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 31 Mei 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 31 Mei 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 31 Mei 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 31 Mei 2025 berhasil dikirim
+Selesai!
+
+2025-05-31 20:01:03,589 - SPV report completed with return code: 0
+2025-05-31 20:01:03,589 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-01 12:00:05,181 - Running report within grace period: 12:00-12:15
+2025-06-01 12:00:05,181 - Running reports at 2025-06-01 12:00:05
+2025-06-01 12:00:05,181 - Running vehicle report...
+2025-06-01 12:00:27,317 - Running SPV performance report...
+2025-06-01 12:00:33,421 - Vehicle report completed with return code: 0
+2025-06-01 12:00:33,421 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 1 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 1 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 1 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 1 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-01 12:00:33,421 - SPV report completed with return code: 0
+2025-06-01 12:00:33,421 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-01 14:00:33,463 - Running report within grace period: 14:00-14:15
+2025-06-01 14:00:33,463 - Running reports at 2025-06-01 14:00:33
+2025-06-01 14:00:33,463 - Running vehicle report...
+2025-06-01 14:00:55,681 - Running SPV performance report...
+2025-06-01 14:01:01,928 - Vehicle report completed with return code: 0
+2025-06-01 14:01:01,928 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 1 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 1 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 1 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 1 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-01 14:01:01,928 - SPV report completed with return code: 0
+2025-06-01 14:01:01,928 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-01 16:00:01,972 - Running report within grace period: 16:00-16:15
+2025-06-01 16:00:01,972 - Running reports at 2025-06-01 16:00:01
+2025-06-01 16:00:01,972 - Running vehicle report...
+2025-06-01 16:00:26,102 - Running SPV performance report...
+2025-06-01 16:00:32,339 - Vehicle report completed with return code: 0
+2025-06-01 16:00:32,339 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 1 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 1 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 1 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 1 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-01 16:00:32,339 - SPV report completed with return code: 0
+2025-06-01 16:00:32,339 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-01 18:00:32,380 - Running report within grace period: 18:00-18:15
+2025-06-01 18:00:32,380 - Running reports at 2025-06-01 18:00:32
+2025-06-01 18:00:32,380 - Running vehicle report...
+2025-06-01 18:00:58,329 - Running SPV performance report...
+2025-06-01 18:01:04,484 - Vehicle report completed with return code: 0
+2025-06-01 18:01:04,484 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 1 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 1 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 1 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 1 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-01 18:01:04,484 - SPV report completed with return code: 0
+2025-06-01 18:01:04,484 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-01 20:00:04,530 - Running report within grace period: 20:00-20:15
+2025-06-01 20:00:04,530 - Running reports at 2025-06-01 20:00:04
+2025-06-01 20:00:04,530 - Running vehicle report...
+2025-06-01 20:00:34,301 - Running SPV performance report...
+2025-06-01 20:00:41,927 - Vehicle report completed with return code: 0
+2025-06-01 20:00:41,927 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 1 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 1 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 1 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 1 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-01 20:00:41,927 - SPV report completed with return code: 0
+2025-06-01 20:00:41,927 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-02 12:00:43,529 - Running report within grace period: 12:00-12:15
+2025-06-02 12:00:43,529 - Running reports at 2025-06-02 12:00:43
+2025-06-02 12:00:43,529 - Running vehicle report...
+2025-06-02 12:01:14,972 - Running SPV performance report...
+2025-06-02 12:01:20,367 - Vehicle report completed with return code: 0
+2025-06-02 12:01:20,367 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 2 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 2 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 2 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 2 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-02 12:01:20,367 - SPV report completed with return code: 0
+2025-06-02 12:01:20,367 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-02 14:00:20,420 - Running report within grace period: 14:00-14:15
+2025-06-02 14:00:20,420 - Running reports at 2025-06-02 14:00:20
+2025-06-02 14:00:20,420 - Running vehicle report...
+2025-06-02 14:00:54,606 - Running SPV performance report...
+2025-06-02 14:01:02,477 - Vehicle report completed with return code: 0
+2025-06-02 14:01:02,477 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 2 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 2 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 2 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 2 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-02 14:01:02,477 - SPV report completed with return code: 0
+2025-06-02 14:01:02,477 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-02 16:00:02,533 - Running report within grace period: 16:00-16:15
+2025-06-02 16:00:02,533 - Running reports at 2025-06-02 16:00:02
+2025-06-02 16:00:02,533 - Running vehicle report...
+2025-06-02 16:00:31,293 - Running SPV performance report...
+2025-06-02 16:00:37,637 - Vehicle report completed with return code: 0
+2025-06-02 16:00:37,637 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 2 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 2 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 2 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 2 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-02 16:00:37,637 - SPV report completed with return code: 0
+2025-06-02 16:00:37,637 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-02 18:00:37,691 - Running report within grace period: 18:00-18:15
+2025-06-02 18:00:37,691 - Running reports at 2025-06-02 18:00:37
+2025-06-02 18:00:37,691 - Running vehicle report...
+2025-06-02 18:01:06,813 - Running SPV performance report...
+2025-06-02 18:01:13,297 - Vehicle report completed with return code: 0
+2025-06-02 18:01:13,297 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 2 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 2 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 2 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 2 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-02 18:01:13,297 - SPV report completed with return code: 0
+2025-06-02 18:01:13,297 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-02 20:00:13,351 - Running report within grace period: 20:00-20:15
+2025-06-02 20:00:13,351 - Running reports at 2025-06-02 20:00:13
+2025-06-02 20:00:13,351 - Running vehicle report...
+2025-06-02 20:00:47,850 - Running SPV performance report...
+2025-06-02 20:00:54,132 - Vehicle report completed with return code: 0
+2025-06-02 20:00:54,132 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 2 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 2 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 2 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 2 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-02 20:00:54,132 - SPV report completed with return code: 0
+2025-06-02 20:00:54,132 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-03 12:00:55,730 - Running report within grace period: 12:00-12:15
+2025-06-03 12:00:55,730 - Running reports at 2025-06-03 12:00:55
+2025-06-03 12:00:55,730 - Running vehicle report...
+2025-06-03 12:01:39,749 - Running SPV performance report...
+2025-06-03 12:01:46,250 - Vehicle report completed with return code: 0
+2025-06-03 12:01:46,250 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 3 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 3 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 3 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 3 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-03 12:01:46,250 - SPV report completed with return code: 0
+2025-06-03 12:01:46,250 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-03 14:00:46,298 - Running report within grace period: 14:00-14:15
+2025-06-03 14:00:46,298 - Running reports at 2025-06-03 14:00:46
+2025-06-03 14:00:46,298 - Running vehicle report...
+2025-06-03 14:01:15,185 - Running SPV performance report...
+2025-06-03 14:01:21,654 - Vehicle report completed with return code: 0
+2025-06-03 14:01:21,654 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 3 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 3 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 3 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 3 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-03 14:01:21,654 - SPV report completed with return code: 0
+2025-06-03 14:01:21,654 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-03 16:00:21,714 - Running report within grace period: 16:00-16:15
+2025-06-03 16:00:21,714 - Running reports at 2025-06-03 16:00:21
+2025-06-03 16:00:21,714 - Running vehicle report...
+2025-06-03 16:00:47,107 - Running SPV performance report...
+2025-06-03 16:00:53,295 - Vehicle report completed with return code: 0
+2025-06-03 16:00:53,295 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 3 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 3 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 3 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 3 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-03 16:00:53,295 - SPV report completed with return code: 0
+2025-06-03 16:00:53,295 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-03 18:00:53,351 - Running report within grace period: 18:00-18:15
+2025-06-03 18:00:53,351 - Running reports at 2025-06-03 18:00:53
+2025-06-03 18:00:53,351 - Running vehicle report...
+2025-06-03 18:01:21,899 - Running SPV performance report...
+2025-06-03 18:01:28,071 - Vehicle report completed with return code: 0
+2025-06-03 18:01:28,071 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 3 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 3 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 3 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 3 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-03 18:01:28,071 - SPV report completed with return code: 0
+2025-06-03 18:01:28,071 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-03 20:00:28,121 - Running report within grace period: 20:00-20:15
+2025-06-03 20:00:28,121 - Running reports at 2025-06-03 20:00:28
+2025-06-03 20:00:28,121 - Running vehicle report...
+2025-06-03 20:00:58,368 - Running SPV performance report...
+2025-06-03 20:01:05,478 - Vehicle report completed with return code: 0
+2025-06-03 20:01:05,478 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 3 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 3 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 3 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 3 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-03 20:01:05,478 - SPV report completed with return code: 0
+2025-06-03 20:01:05,478 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-04 12:00:07,065 - Running report within grace period: 12:00-12:15
+2025-06-04 12:00:07,065 - Running reports at 2025-06-04 12:00:07
+2025-06-04 12:00:07,065 - Running vehicle report...
+2025-06-04 12:00:38,825 - Running SPV performance report...
+2025-06-04 12:00:46,201 - Vehicle report completed with return code: 0
+2025-06-04 12:00:46,201 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 4 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 4 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 4 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 4 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-04 12:00:46,201 - SPV report completed with return code: 0
+2025-06-04 12:00:46,201 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-04 14:00:46,252 - Running report within grace period: 14:00-14:15
+2025-06-04 14:00:46,252 - Running reports at 2025-06-04 14:00:46
+2025-06-04 14:00:46,252 - Running vehicle report...
+2025-06-04 14:01:15,831 - Running SPV performance report...
+2025-06-04 14:01:22,285 - Vehicle report completed with return code: 0
+2025-06-04 14:01:22,285 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 4 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 4 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 4 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 4 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-04 14:01:22,285 - SPV report completed with return code: 0
+2025-06-04 14:01:22,285 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-04 16:00:22,341 - Running report within grace period: 16:00-16:15
+2025-06-04 16:00:22,341 - Running reports at 2025-06-04 16:00:22
+2025-06-04 16:00:22,341 - Running vehicle report...
+2025-06-04 16:00:48,875 - Running SPV performance report...
+2025-06-04 16:00:54,923 - Vehicle report completed with return code: 0
+2025-06-04 16:00:54,923 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 4 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 4 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 4 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 4 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-04 16:00:54,923 - SPV report completed with return code: 0
+2025-06-04 16:00:54,923 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-04 18:00:54,969 - Running report within grace period: 18:00-18:15
+2025-06-04 18:00:54,969 - Running reports at 2025-06-04 18:00:54
+2025-06-04 18:00:54,969 - Running vehicle report...
+2025-06-04 18:01:21,317 - Running SPV performance report...
+2025-06-04 18:01:27,583 - Vehicle report completed with return code: 0
+2025-06-04 18:01:27,583 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 4 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 4 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 4 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 4 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-04 18:01:27,583 - SPV report completed with return code: 0
+2025-06-04 18:01:27,583 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-04 20:00:27,638 - Running report within grace period: 20:00-20:15
+2025-06-04 20:00:27,638 - Running reports at 2025-06-04 20:00:27
+2025-06-04 20:00:27,638 - Running vehicle report...
+2025-06-04 20:01:03,052 - Running SPV performance report...
+2025-06-04 20:01:09,944 - Vehicle report completed with return code: 0
+2025-06-04 20:01:09,944 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 4 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 4 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 4 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 4 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-04 20:01:09,944 - SPV report completed with return code: 0
+2025-06-04 20:01:09,944 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-05 12:00:11,547 - Running report within grace period: 12:00-12:15
+2025-06-05 12:00:11,547 - Running reports at 2025-06-05 12:00:11
+2025-06-05 12:00:11,547 - Running vehicle report...
+2025-06-05 12:00:39,859 - Running SPV performance report...
+2025-06-05 12:00:46,789 - Vehicle report completed with return code: 0
+2025-06-05 12:00:46,789 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 5 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 5 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 5 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 5 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-05 12:00:46,789 - SPV report completed with return code: 0
+2025-06-05 12:00:46,789 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-05 14:00:46,844 - Running report within grace period: 14:00-14:15
+2025-06-05 14:00:46,844 - Running reports at 2025-06-05 14:00:46
+2025-06-05 14:00:46,844 - Running vehicle report...
+2025-06-05 14:01:16,510 - Running SPV performance report...
+2025-06-05 14:01:24,138 - Vehicle report completed with return code: 0
+2025-06-05 14:01:24,138 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 5 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 5 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 5 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 5 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-05 14:01:24,138 - SPV report completed with return code: 0
+2025-06-05 14:01:24,138 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-05 16:00:24,187 - Running report within grace period: 16:00-16:15
+2025-06-05 16:00:24,187 - Running reports at 2025-06-05 16:00:24
+2025-06-05 16:00:24,187 - Running vehicle report...
+2025-06-05 16:00:49,579 - Running SPV performance report...
+2025-06-05 16:00:55,806 - Vehicle report completed with return code: 0
+2025-06-05 16:00:55,806 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 5 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 5 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 5 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 5 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-05 16:00:55,806 - SPV report completed with return code: 0
+2025-06-05 16:00:55,806 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-05 18:00:55,867 - Running report within grace period: 18:00-18:15
+2025-06-05 18:00:55,867 - Running reports at 2025-06-05 18:00:55
+2025-06-05 18:00:55,867 - Running vehicle report...
+2025-06-05 18:01:20,637 - Running SPV performance report...
+2025-06-05 18:01:26,858 - Vehicle report completed with return code: 0
+2025-06-05 18:01:26,858 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 5 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 5 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 5 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 5 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-05 18:01:26,858 - SPV report completed with return code: 0
+2025-06-05 18:01:26,858 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-05 20:00:26,903 - Running report within grace period: 20:00-20:15
+2025-06-05 20:00:26,903 - Running reports at 2025-06-05 20:00:26
+2025-06-05 20:00:26,903 - Running vehicle report...
+2025-06-05 20:00:57,279 - Running SPV performance report...
+2025-06-05 20:01:03,365 - Vehicle report completed with return code: 0
+2025-06-05 20:01:03,365 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 5 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 5 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 5 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 5 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-05 20:01:03,365 - SPV report completed with return code: 0
+2025-06-05 20:01:03,365 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-06 12:00:04,949 - Running report within grace period: 12:00-12:15
+2025-06-06 12:00:04,949 - Running reports at 2025-06-06 12:00:04
+2025-06-06 12:00:04,949 - Running vehicle report...
+2025-06-06 12:00:30,002 - Running SPV performance report...
+2025-06-06 12:00:36,332 - Vehicle report completed with return code: 0
+2025-06-06 12:00:36,332 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 6 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 6 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 6 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 6 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-06 12:00:36,332 - SPV report completed with return code: 0
+2025-06-06 12:00:36,332 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-06 14:00:36,378 - Running report within grace period: 14:00-14:15
+2025-06-06 14:00:36,378 - Running reports at 2025-06-06 14:00:36
+2025-06-06 14:00:36,378 - Running vehicle report...
+2025-06-06 14:01:00,744 - Running SPV performance report...
+2025-06-06 14:01:07,134 - Vehicle report completed with return code: 0
+2025-06-06 14:01:07,134 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 6 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 6 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 6 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 6 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-06 14:01:07,134 - SPV report completed with return code: 0
+2025-06-06 14:01:07,134 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-06 16:00:07,182 - Running report within grace period: 16:00-16:15
+2025-06-06 16:00:07,182 - Running reports at 2025-06-06 16:00:07
+2025-06-06 16:00:07,182 - Running vehicle report...
+2025-06-06 16:00:31,931 - Running SPV performance report...
+2025-06-06 16:00:38,387 - Vehicle report completed with return code: 0
+2025-06-06 16:00:38,387 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 6 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 6 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 6 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 6 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-06 16:00:38,387 - SPV report completed with return code: 0
+2025-06-06 16:00:38,387 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-06 18:00:38,432 - Running report within grace period: 18:00-18:15
+2025-06-06 18:00:38,432 - Running reports at 2025-06-06 18:00:38
+2025-06-06 18:00:38,432 - Running vehicle report...
+2025-06-06 18:01:03,519 - Running SPV performance report...
+2025-06-06 18:01:09,707 - Vehicle report completed with return code: 0
+2025-06-06 18:01:09,707 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 6 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 6 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 6 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 6 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-06 18:01:09,707 - SPV report completed with return code: 0
+2025-06-06 18:01:09,707 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-06 20:00:09,770 - Running report within grace period: 20:00-20:15
+2025-06-06 20:00:09,770 - Running reports at 2025-06-06 20:00:09
+2025-06-06 20:00:09,770 - Running vehicle report...
+2025-06-06 20:00:37,092 - Running SPV performance report...
+2025-06-06 20:00:43,267 - Vehicle report completed with return code: 0
+2025-06-06 20:00:43,268 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 6 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 6 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 6 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 6 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-06 20:00:43,268 - SPV report completed with return code: 0
+2025-06-06 20:00:43,268 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-07 12:00:44,871 - Running report within grace period: 12:00-12:15
+2025-06-07 12:00:44,871 - Running reports at 2025-06-07 12:00:44
+2025-06-07 12:00:44,871 - Running vehicle report...
+2025-06-07 12:01:10,792 - Running SPV performance report...
+2025-06-07 12:01:17,495 - Vehicle report completed with return code: 0
+2025-06-07 12:01:17,495 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 7 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 7 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 7 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 7 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-07 12:01:17,495 - SPV report completed with return code: 0
+2025-06-07 12:01:17,495 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-07 14:00:17,554 - Running report within grace period: 14:00-14:15
+2025-06-07 14:00:17,554 - Running reports at 2025-06-07 14:00:17
+2025-06-07 14:00:17,554 - Running vehicle report...
+2025-06-07 14:00:43,264 - Running SPV performance report...
+2025-06-07 14:00:49,460 - Vehicle report completed with return code: 0
+2025-06-07 14:00:49,460 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 7 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 7 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 7 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 7 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-07 14:00:49,460 - SPV report completed with return code: 0
+2025-06-07 14:00:49,460 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-07 16:00:49,512 - Running report within grace period: 16:00-16:15
+2025-06-07 16:00:49,512 - Running reports at 2025-06-07 16:00:49
+2025-06-07 16:00:49,512 - Running vehicle report...
+2025-06-07 16:01:14,115 - Running SPV performance report...
+2025-06-07 16:01:20,412 - Vehicle report completed with return code: 0
+2025-06-07 16:01:20,412 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 7 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 7 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 7 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 7 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-07 16:01:20,412 - SPV report completed with return code: 0
+2025-06-07 16:01:20,412 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-07 18:00:20,469 - Running report within grace period: 18:00-18:15
+2025-06-07 18:00:20,469 - Running reports at 2025-06-07 18:00:20
+2025-06-07 18:00:20,469 - Running vehicle report...
+2025-06-07 18:00:45,680 - Running SPV performance report...
+2025-06-07 18:00:52,139 - Vehicle report completed with return code: 0
+2025-06-07 18:00:52,139 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 7 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 7 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 7 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 7 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-07 18:00:52,139 - SPV report completed with return code: 0
+2025-06-07 18:00:52,139 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-07 20:00:52,193 - Running report within grace period: 20:00-20:15
+2025-06-07 20:00:52,193 - Running reports at 2025-06-07 20:00:52
+2025-06-07 20:00:52,193 - Running vehicle report...
+2025-06-07 20:01:22,880 - Running SPV performance report...
+2025-06-07 20:01:30,302 - Vehicle report completed with return code: 0
+2025-06-07 20:01:30,302 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 7 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 7 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 7 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 7 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-07 20:01:30,302 - SPV report completed with return code: 0
+2025-06-07 20:01:30,302 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-08 12:00:31,843 - Running report within grace period: 12:00-12:15
+2025-06-08 12:00:31,843 - Running reports at 2025-06-08 12:00:31
+2025-06-08 12:00:31,843 - Running vehicle report...
+2025-06-08 12:00:57,006 - Running SPV performance report...
+2025-06-08 12:01:02,042 - Vehicle report completed with return code: 0
+2025-06-08 12:01:02,042 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 8 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 8 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 8 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 8 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-08 12:01:02,042 - SPV report completed with return code: 0
+2025-06-08 12:01:02,042 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-08 14:00:02,092 - Running report within grace period: 14:00-14:15
+2025-06-08 14:00:02,092 - Running reports at 2025-06-08 14:00:02
+2025-06-08 14:00:02,093 - Running vehicle report...
+2025-06-08 14:00:28,439 - Running SPV performance report...
+2025-06-08 14:00:34,579 - Vehicle report completed with return code: 0
+2025-06-08 14:00:34,579 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 8 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 8 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 8 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 8 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-08 14:00:34,579 - SPV report completed with return code: 0
+2025-06-08 14:00:34,579 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-08 16:00:34,625 - Running report within grace period: 16:00-16:15
+2025-06-08 16:00:34,625 - Running reports at 2025-06-08 16:00:34
+2025-06-08 16:00:34,625 - Running vehicle report...
+2025-06-08 16:00:59,887 - Running SPV performance report...
+2025-06-08 16:01:05,951 - Vehicle report completed with return code: 0
+2025-06-08 16:01:05,951 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 8 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 8 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 8 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 8 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-08 16:01:05,951 - SPV report completed with return code: 0
+2025-06-08 16:01:05,951 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-08 18:00:06,004 - Running report within grace period: 18:00-18:15
+2025-06-08 18:00:06,005 - Running reports at 2025-06-08 18:00:06
+2025-06-08 18:00:06,005 - Running vehicle report...
+2025-06-08 18:00:32,954 - Running SPV performance report...
+2025-06-08 18:00:39,504 - Vehicle report completed with return code: 0
+2025-06-08 18:00:39,504 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 8 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 8 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 8 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 8 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-08 18:00:39,504 - SPV report completed with return code: 0
+2025-06-08 18:00:39,504 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-08 20:00:39,545 - Running report within grace period: 20:00-20:15
+2025-06-08 20:00:39,545 - Running reports at 2025-06-08 20:00:39
+2025-06-08 20:00:39,545 - Running vehicle report...
+2025-06-08 20:01:09,722 - Running SPV performance report...
+2025-06-08 20:01:16,817 - Vehicle report completed with return code: 0
+2025-06-08 20:01:16,817 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 8 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 8 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 8 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 8 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-08 20:01:16,817 - SPV report completed with return code: 0
+2025-06-08 20:01:16,817 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-09 12:00:18,480 - Running report within grace period: 12:00-12:15
+2025-06-09 12:00:18,480 - Running reports at 2025-06-09 12:00:18
+2025-06-09 12:00:18,480 - Running vehicle report...
+2025-06-09 12:00:50,781 - Running SPV performance report...
+2025-06-09 12:00:58,279 - Vehicle report completed with return code: 0
+2025-06-09 12:00:58,279 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 9 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 9 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 9 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 9 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-09 12:00:58,279 - SPV report completed with return code: 0
+2025-06-09 12:00:58,279 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-09 14:00:58,330 - Running report within grace period: 14:00-14:15
+2025-06-09 14:00:58,330 - Running reports at 2025-06-09 14:00:58
+2025-06-09 14:00:58,330 - Running vehicle report...
+2025-06-09 14:01:23,265 - Running SPV performance report...
+2025-06-09 14:01:29,453 - Vehicle report completed with return code: 0
+2025-06-09 14:01:29,453 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 9 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 9 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 9 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 9 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-09 14:01:29,453 - SPV report completed with return code: 0
+2025-06-09 14:01:29,453 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-09 16:00:29,504 - Running report within grace period: 16:00-16:15
+2025-06-09 16:00:29,504 - Running reports at 2025-06-09 16:00:29
+2025-06-09 16:00:29,504 - Running vehicle report...
+2025-06-09 16:00:56,605 - Running SPV performance report...
+2025-06-09 16:01:03,678 - Vehicle report completed with return code: 0
+2025-06-09 16:01:03,678 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 9 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 9 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 9 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 9 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-09 16:01:03,678 - SPV report completed with return code: 0
+2025-06-09 16:01:03,678 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-09 18:00:03,724 - Running report within grace period: 18:00-18:15
+2025-06-09 18:00:03,724 - Running reports at 2025-06-09 18:00:03
+2025-06-09 18:00:03,724 - Running vehicle report...
+2025-06-09 18:00:32,807 - Running SPV performance report...
+2025-06-09 18:00:38,922 - Vehicle report completed with return code: 0
+2025-06-09 18:00:38,923 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 9 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 9 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 9 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 9 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-09 18:00:38,923 - SPV report completed with return code: 0
+2025-06-09 18:00:38,923 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-09 20:00:38,967 - Running report within grace period: 20:00-20:15
+2025-06-09 20:00:38,967 - Running reports at 2025-06-09 20:00:38
+2025-06-09 20:00:38,967 - Running vehicle report...
+2025-06-09 20:01:11,461 - Running SPV performance report...
+2025-06-09 20:01:19,696 - Vehicle report completed with return code: 0
+2025-06-09 20:01:19,696 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 9 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 9 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 9 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 9 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-09 20:01:19,696 - SPV report completed with return code: 0
+2025-06-09 20:01:19,696 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-10 12:00:21,286 - Running report within grace period: 12:00-12:15
+2025-06-10 12:00:21,286 - Running reports at 2025-06-10 12:00:21
+2025-06-10 12:00:21,286 - Running vehicle report...
+2025-06-10 12:00:51,311 - Running SPV performance report...
+2025-06-10 12:00:55,891 - Vehicle report completed with return code: 0
+2025-06-10 12:00:55,891 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 10 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 10 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 10 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 10 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-10 12:00:55,891 - SPV report completed with return code: 0
+2025-06-10 12:00:55,891 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-10 14:00:55,943 - Running report within grace period: 14:00-14:15
+2025-06-10 14:00:55,943 - Running reports at 2025-06-10 14:00:55
+2025-06-10 14:00:55,943 - Running vehicle report...
+2025-06-10 14:01:23,728 - Running SPV performance report...
+2025-06-10 14:01:30,167 - Vehicle report completed with return code: 0
+2025-06-10 14:01:30,167 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 10 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 10 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 10 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 10 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-10 14:01:30,167 - SPV report completed with return code: 0
+2025-06-10 14:01:30,167 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-11 14:45:49,151 - Scheduler started with 15-minute grace periods
+2025-06-11 16:00:49,180 - Running report within grace period: 16:00-16:15
+2025-06-11 16:00:49,180 - Running reports at 2025-06-11 16:00:49
+2025-06-11 16:00:49,180 - Running vehicle report...
+2025-06-11 16:01:15,502 - Running SPV performance report...
+2025-06-11 16:01:21,675 - Vehicle report completed with return code: 0
+2025-06-11 16:01:21,675 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 11 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 11 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 11 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Database error in get_margin_summary: 1054 (42S22): Unknown column 'pl.subs_ahm' in 'field list'
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 11 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-11 16:01:21,675 - SPV report completed with return code: 0
+2025-06-11 16:01:21,675 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-11 17:26:17,251 - Scheduler started with 15-minute grace periods
+2025-06-11 18:00:17,268 - Running report within grace period: 18:00-18:15
+2025-06-11 18:00:17,268 - Running reports at 2025-06-11 18:00:17
+2025-06-11 18:00:17,268 - Running vehicle report...
+2025-06-11 18:00:46,416 - Running SPV performance report...
+2025-06-11 18:00:53,286 - Vehicle report completed with return code: 0
+2025-06-11 18:00:53,286 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 11 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 11 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 11 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 11 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-11 18:00:53,286 - SPV report completed with return code: 0
+2025-06-11 18:00:53,286 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-11 20:00:53,341 - Running report within grace period: 20:00-20:15
+2025-06-11 20:00:53,341 - Running reports at 2025-06-11 20:00:53
+2025-06-11 20:00:53,341 - Running vehicle report...
+2025-06-11 20:01:27,994 - Running SPV performance report...
+2025-06-11 20:01:34,994 - Vehicle report completed with return code: 0
+2025-06-11 20:01:34,994 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 11 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 11 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 11 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 11 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-11 20:01:34,994 - SPV report completed with return code: 0
+2025-06-11 20:01:34,994 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
+2025-06-12 12:00:36,589 - Running report within grace period: 12:00-12:15
+2025-06-12 12:00:36,589 - Running reports at 2025-06-12 12:00:36
+2025-06-12 12:00:36,589 - Running vehicle report...
+2025-06-12 12:01:06,142 - Running SPV performance report...
+2025-06-12 12:01:12,549 - Vehicle report completed with return code: 0
+2025-06-12 12:01:12,549 - Vehicle report output: Mengirim laporan untuk hari ini...
+Mengambil data untuk M2 Madiun tanggal 12 Juni 2025
+Data harian M2 Madiun berhasil diambil
+Data margin M2 Madiun berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Madiun untuk tanggal 12 Juni 2025 berhasil dikirim
+Mengambil data untuk M2 Magetan tanggal 12 Juni 2025
+Data harian M2 Magetan berhasil diambil
+Data margin M2 Magetan berhasil diambil
+Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+Laporan M2 Magetan untuk tanggal 12 Juni 2025 berhasil dikirim
+Selesai!
+
+2025-06-12 12:01:12,549 - SPV report completed with return code: 0
+2025-06-12 12:01:12,549 - SPV report output: Email berhasil dikirim ke alvusebastian@gmail.com, sony_hendarto@hotmail.com
+SPV DO report sent successfully!
+
