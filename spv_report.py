@@ -352,7 +352,8 @@ def main():
         print("  python spv_report.py 2025-01-01 2025-06-05  # Custom date range")
         sys.exit(1)
 
-    recipients = ["alvusebastian@gmail.com"]
+    # recipients = ["alvusebastian@gmail.com"]
+    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
     
     try:
         # Get SPV performance data for both locations
