@@ -1,7 +1,21 @@
+# Log files
 scheduler.log
-__pycache__/db_operations.cpython-312.pyc
-scheduler.log
-scheduler.log
-__pycache__/db_operations.cpython-312.pyc
-scheduler.log
-__pycache__/db_operations.cpython-312.pyc
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables (contains sensitive information)
+.env
+
+# Build directories
+build/
+dist/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo

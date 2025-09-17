@@ -5,6 +5,10 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 from db_operations import get_spv_performance
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 def format_date_id(date_str):
     """Format date string to Indonesian format (e.g., '01 Januari 2025')."""
@@ -276,10 +280,10 @@ def format_spv_report(spv_data, start_date, end_date):
 
 def send_email(subject, body, recipients):
     """Send email to specified recipients."""
-    smtp_server = "smtp.gmail.com"
-    smtp_port = 587
-    sender_email = "marviano.austin@gmail.com"
-    app_password = "ktqbdhbktmcdkvuf"
+    smtp_server = os.getenv("SMTP_SERVER")
+    smtp_port = int(os.getenv("SMTP_PORT"))
+    sender_email = os.getenv("SENDER_EMAIL")
+    app_password = os.getenv("SENDER_PASSWORD")
 
     message = MIMEMultipart("alternative")
     message["From"] = sender_email
@@ -352,8 +356,9 @@ def main():
         print("  python spv_report.py 2025-01-01 2025-06-05  # Custom date range")
         sys.exit(1)
 
-    # recipients = ["alvusebastian@gmail.com"]
-    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
+    # Get recipients from environment variables
+    recipients_str = os.getenv("EMAIL_RECIPIENTS", "")
+    recipients = [email.strip() for email in recipients_str.split(",") if email.strip()]
     
     try:
         # Get SPV performance data for both locations

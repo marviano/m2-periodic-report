@@ -1,8 +1,13 @@
 #db_operations.py
 
 import mysql.connector
+import os
 from datetime import datetime, timezone, timedelta
 from typing import Dict, Any
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 def connect_to_database(database_name="honda_mis"):
     """Establish connection to the MySQL database.
@@ -11,9 +16,9 @@ def connect_to_database(database_name="honda_mis"):
         database_name (str): Name of the database to connect to. Default is "honda_mis".
     """
     return mysql.connector.connect(
-        host="36.74.102.231",
-        user="honda_mis",
-        password="mcMotor",
+        host=os.getenv("DB_HOST"),
+        user=os.getenv("DB_USERNAME"),
+        password=os.getenv("DB_PASSWORD"),
         database=database_name
     )
 

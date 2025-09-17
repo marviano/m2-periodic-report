@@ -11,6 +11,10 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime, timezone, timedelta, date
 from db_operations import get_vehicle_data, connect_to_database
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 
 def format_currency(amount):
@@ -829,10 +833,10 @@ def create_html_report(daily_data, weekly_data, monthly_data,
 
 def send_email(subject, body, recipients):
     """Send email to specified recipients."""
-    smtp_server = "smtp.gmail.com"
-    smtp_port = 587
-    sender_email = "marviano.austin@gmail.com"
-    app_password = "ktqbdhbktmcdkvuf"
+    smtp_server = os.getenv("SMTP_SERVER")
+    smtp_port = int(os.getenv("SMTP_PORT"))
+    sender_email = os.getenv("SENDER_EMAIL")
+    app_password = os.getenv("SENDER_PASSWORD")
 
     message = MIMEMultipart("alternative")
     message["From"] = sender_email
@@ -861,8 +865,9 @@ def process_location_data(db_name, location_name, specific_date=None):
         location_name (str): Name of the location for the report title
         specific_date (date, optional): Specific date for the report. Defaults to None (current date).
     """
-    # recipients = ["alvusebastian@gmail.com"]
-    recipients = ["alvusebastian@gmail.com", "sony_hendarto@hotmail.com"]
+    # Get recipients from environment variables
+    recipients_str = os.getenv("EMAIL_RECIPIENTS", "")
+    recipients = [email.strip() for email in recipients_str.split(",") if email.strip()]
     
     try:
         # Use the provided date or today's date
