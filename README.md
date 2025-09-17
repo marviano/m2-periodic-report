@@ -2,18 +2,6 @@
 
 A comprehensive automated reporting system for M2 Madiun and M2 Magetan vehicle sales data, including DO (Delivery Order) reports and SPV (Supervisor) performance tracking.
 
-## 📋 Table of Contents
-
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Scripts Overview](#scripts-overview)
-- [Scheduling](#scheduling)
-- [Troubleshooting](#troubleshooting)
-- [Security Notes](#security-notes)
-
 ## 🚀 Features
 
 - **Automated Daily Reports**: Generate and send vehicle sales reports automatically
